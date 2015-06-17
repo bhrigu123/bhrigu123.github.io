@@ -4,13 +4,36 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://bhrigu123.github.io/atom.xml" rel="self"/>
   <link href="http://bhrigu123.github.io/"/>
-  <updated>2015-06-17T02:09:26+05:30</updated>
+  <updated>2015-06-17T23:51:32+05:30</updated>
   <id>http://bhrigu123.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Bhrigu Srivastava]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[My First Post]]></title>
+    <link href="http://bhrigu123.github.io/blog/2015/06/17/my-first-post/"/>
+    <updated>2015-06-17T21:30:04+05:30</updated>
+    <id>http://bhrigu123.github.io/blog/2015/06/17/my-first-post</id>
+    <content type="html"><![CDATA[<p>This is a test post.
+Testing my first octopress blog post.</p>
+
+<!-- more-->
+
+
+<p>You will view this content only if you see the complete post. Continued line.</p>
+
+<p>Separate line.</p>
+
+<h2>Heading Check</h2>
+
+<p>This is a paragraph, after which there will be a new line
+<br>
+Another sentence</p>
+]]></content>
+  </entry>
   
 </feed>
