@@ -4,7 +4,7 @@
   <title><![CDATA[The Game is On]]></title>
   <link href="http://bhrigu123.github.io/atom.xml" rel="self"/>
   <link href="http://bhrigu123.github.io/"/>
-  <updated>2015-06-18T23:53:24+05:30</updated>
+  <updated>2015-06-19T10:57:29+05:30</updated>
   <id>http://bhrigu123.github.io/</id>
   <author>
     <name><![CDATA[Bhrigu Srivastava]]></name>
@@ -20,7 +20,7 @@
     <id>http://bhrigu123.github.io/blog/2015/06/18/the-game-is-on</id>
     <content type="html"><![CDATA[<p>So after setting up octopress and learning how to use it and deploy using Github, I have finally set out to blogging, which I wanted to start for a long time but was everytime too lazy to set up my computer.</p>
 
-<p>Now, for a novice like me, this blogging technique is much different than the regular blogging websites, like Wordpress, since you have to work <!--more--> using the terminal (shell) of your system, and to be honest, it is much more fun this way. It gives you more of a hacker&rsquo;s feel as you have to do a lot of shell scripting. Moreover, markdown language makes writing posts easier as well as interesting.<br>
+<p>Now, for a novice like me, this blogging technique is much different from the regular blogging websites, like Wordpress, since you have to work <!--more--> using the terminal (shell) of your system, and to be honest, it is much more fun this way. It gives you more of a hacker&rsquo;s feel as you have to do a lot of shell scripting. Moreover, markdown language makes writing posts easier as well as interesting.<br>
 I&rsquo;m looking forward to explore the functionalities this blogging service can provide, and experiment with the third party plugins to get more features.</p>
 
 <p>One more reason I couldn&rsquo;t start a blog earlier was that I wasn&rsquo;t sure about the content I would put in it. Now that I&rsquo;ve started competitive programming and some web development, I would post about problem solving skills and algorithms (as I learn along), personal experiences, and also anything that is worth sharing and I find could be of service to you.</p>
