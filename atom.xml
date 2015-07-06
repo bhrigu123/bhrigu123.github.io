@@ -4,7 +4,7 @@
   <title><![CDATA[The Game is On]]></title>
   <link href="http://bhrigu123.github.io/atom.xml" rel="self"/>
   <link href="http://bhrigu123.github.io/"/>
-  <updated>2015-06-23T23:12:42+05:30</updated>
+  <updated>2015-07-06T22:55:29+05:30</updated>
   <id>http://bhrigu123.github.io/</id>
   <author>
     <name><![CDATA[Bhrigu Srivastava]]></name>
@@ -12,6 +12,34 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Starting Django Project]]></title>
+    <link href="http://bhrigu123.github.io/blog/2015/07/06/starting-django-project/"/>
+    <updated>2015-07-06T09:25:47+05:30</updated>
+    <id>http://bhrigu123.github.io/blog/2015/07/06/starting-django-project</id>
+    <content type="html"><![CDATA[<p><code>django-admin.py startproject newproj</code><br>
+I had learnt the django framework basics quite a while ago, but never worked on or made a complete functional project.<br>
+To kick off, I&rsquo;m starting a basic Q&amp;A app using django, and plan to learn along with the challenges I face, and discover new stuff.<!--more--></p>
+
+<p>Now, I don&rsquo;t know much about other frameworks available, but I believe that django provides the best technique to handle the databases required and makes complicated db design a piece of cake. However, it is also important to understand how they work at the SQL level, to better understand what we are doing. <br>
+Moreover, programming in python makes our code clean and formatted, allows easy debugging and modifications.</p>
+
+<p>For me, I only like handling the backends of a website, while the templates or webpage/layout designing is not really my cup of tea.<br></p>
+
+<center>
+    <img class="[erimg]" src="http://bhrigu123.github.io/images/startdjango/er.jpg" width="500"><br>
+    <small>
+        That's right. Made a rough ER diagram also ;)
+    </small> 
+</center>
+
+
+<p><br></p>
+
+<p>So I hope this would be a good start, and I plan to create some more stuff and apps in the future that could be useful to people in some way.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to Install Ubuntu With Dual Boot (Easy Step-wise Guide)]]></title>
