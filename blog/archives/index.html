@@ -131,13 +131,21 @@ Jun 18 &hellip;">
 <aside class="sidebar">
   
     	<section>
-	
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=1592118837701890";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
 		<h1>About Me</h1>
 		<center>
-			<img class="[erimg]" src="/images/bhrigu.jpg" width="300" height="260" title="[Profile [Profile]]" ><br>
+			<img class="primg" src="/images/bhrigu.jpg" width="160" height="200" title="Profile" ><br>
 		</center>
 		<p>Heyo, I'm Bhrigu Srivastava, an IT undergrad from Delhi Technological University.</p>
 		<p>I'm a learner, and I love programming.</p><br>
+		<div class="fb-follow" data-href="https://www.facebook.com/bhrigu.srivastava" data-layout="button" data-show-faces="true"></div>
 	</section>
 <section>
   <h1>Recent Posts</h1>
