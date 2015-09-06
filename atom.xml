@@ -4,7 +4,7 @@
   <title><![CDATA[The Game is On]]></title>
   <link href="http://bhrigu123.github.io/atom.xml" rel="self"/>
   <link href="http://bhrigu123.github.io/"/>
-  <updated>2015-08-04T00:57:13+05:30</updated>
+  <updated>2015-09-06T17:52:43+05:30</updated>
   <id>http://bhrigu123.github.io/</id>
   <author>
     <name><![CDATA[Bhrigu Srivastava]]></name>
@@ -12,6 +12,59 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Introducing JEEQuery]]></title>
+    <link href="http://bhrigu123.github.io/blog/2015/09/01/deployed-and-hosted/"/>
+    <updated>2015-09-01T23:02:57+05:30</updated>
+    <id>http://bhrigu123.github.io/blog/2015/09/01/deployed-and-hosted</id>
+    <content type="html"><![CDATA[<p><code>The site's live.</code></p>
+
+<p>It took a lot of work and testing to finally launch the beta version of <a href="https://www.facebook.com/jeequery">JEEQuery</a>. It is something I have been working on for a long time, which brought forward various challenges and hurdles, and kept me occupied all this time.</p>
+
+<!--more -->
+
+
+<p><a href="https://www.facebook.com/jeequery">JEEQuery</a> is actually a Q&amp;A app for students preparing for various engineering entrance examinations. Students can post Questions, providing description and use <em>tags</em>,  and get suitable answers from other fellow students.<br> The site offers easy to reach facilities and fundamental features such as upvoting, sharing, adding to favourites etc. The site mainly focuses on JEE preparation and provides various pre-defined tags, that are related to JEE, that could be used.</p>
+
+<p>It was not a smooth journey after all, and took significant amount of hours, head scratching, brain teasing and was done amid some misfortunes, internship interviews, college etc. <br>
+Although I handled the backends of the website, I got notable aid from my bother Yask ( <a href="http://github.com/yask123">@yask123</a> ) in it and significantly in the front end and designing. Also, Yask took over the deployment work efficiently, where we used Amazon Web Services and created a linux box instance running Ubuntu 14.04 with gunicorn and nginx server. Using AWS was something new for us, and created several obstructions, which were overcome and also taught us many things.</p>
+
+<h3>Name and Graphics</h3>
+
+<p>After several reviews, we settled for the name <em>JEEQuery</em>, which is short and handy, and also sounds similar to jquery ;)</p>
+
+<p>The logo of our idea is a glowing <em>bulb</em>. Now a bulb actually symbolizes fundamental innovation and ideolog&hellip;.OK wait&hellip;who am I kidding. I don&rsquo;t know what it symbolizes. We just found it on ClipArt and it nicely replaces the &lsquo;Q&rsquo; in our title.</p>
+
+<p>Here is the snapshot of About page:</p>
+
+<center>
+    <img class="[erimg]" src="http://bhrigu123.github.io/images/jq/about.png" title="[About [About]]" ><br>
+</center>
+
+
+<p><br><br></p>
+
+<center>
+    <img class="[erimg]" src="http://bhrigu123.github.io/images/jq/profile_500.png" width="300" height="300" title="[About [About]]" ><br>
+    <center><small>Logo</small></center>
+</center>
+
+
+<p> <br/>
+<br></p>
+
+<h3>Links</h3>
+
+<p>website: <a href="http://jeequery.com">http://jeequery.com</a></p>
+
+<p>Facebook: <a href="https://www.facebook.com/jeequery">JEEQuery</a></p>
+
+<p>So I hope this creates a proficient database of quality questions, and help students all over with their preparations.<br></p>
+
+<p>Cheers!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Starting Django Project]]></title>
