@@ -13,7 +13,7 @@ description:
 # You can customize the format as defined in
 # http://www.ruby-doc.org/core-1.9.2/Time.html#method-i-strftime
 # Additionally, %o will give you the ordinal representation of the day
-date_format: "ordinal"
+date_format: "%a %e %b %Y, %l:%M %p"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
 subscribe_rss: /atom.xml
@@ -64,8 +64,8 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # ----------------------- #
 
 # Github repositories
-github_user: 
-github_repo_count: 0
+github_user:
+github_repo_count: 1
 github_show_profile_link: true
 github_skip_forks: true
 
@@ -79,7 +79,7 @@ google_plus_one_size: medium
 
 # Google Plus Profile
 # Hidden: No visible button, just add author information to search results
-googleplus_user: +BhriguSrivastava
+googleplus_user:
 googleplus_hidden: false
 
 # Pinboard
