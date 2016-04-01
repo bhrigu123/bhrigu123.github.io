@@ -2,12 +2,12 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://bhrigu123.github.io
-title: The Game is On
-subtitle: Bhrigu Srivastava
+url: http://bhrigu123.github.io/
+title: Bhrigu Srivastava
+subtitle: 
 author: Bhrigu Srivastava
 simple_search: https://www.google.com/search
-description:
+description: Personal blog of Bhrigu Srivastava
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -55,7 +55,7 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 
 # Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
 # and add an array with the asides you want to use.
-# blog_index_asides:
+blog_index_asides: [asides/recent_posts.html, custom/asides/about.html]
 # post_asides:
 # page_asides:
 

@@ -76,3 +76,10 @@ $page-border-bottom: darken($footer-bg, 5) !default;
 .page-content {
     margin-bottom: 42px;
 }
+
+.entry-content{
+	font-family: "Merriweather", serif;
+    letter-spacing: 0.01rem;
+    font-size: 1.8rem;
+    line-height: 1.4em;
+}
