@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[The Game is On]]></title>
-  <link href="http://bhrigu123.github.io/atom.xml" rel="self"/>
-  <link href="http://bhrigu123.github.io/"/>
-  <updated>2016-03-28T15:33:42+05:30</updated>
-  <id>http://bhrigu123.github.io/</id>
+  <title><![CDATA[Bhrigu Srivastava]]></title>
+  <link href="http://bhrigu123.github.io//atom.xml" rel="self"/>
+  <link href="http://bhrigu123.github.io//"/>
+  <updated>2016-04-01T13:16:26+05:30</updated>
+  <id>http://bhrigu123.github.io//</id>
   <author>
     <name><![CDATA[Bhrigu Srivastava]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Introducing JEEQuery]]></title>
-    <link href="http://bhrigu123.github.io/blog/2015/09/01/deployed-and-hosted/"/>
+    <link href="http://bhrigu123.github.io//blog/2015/09/01/deployed-and-hosted/"/>
     <updated>2015-09-01T23:02:57+05:30</updated>
-    <id>http://bhrigu123.github.io/blog/2015/09/01/deployed-and-hosted</id>
+    <id>http://bhrigu123.github.io//blog/2015/09/01/deployed-and-hosted</id>
     <content type="html"><![CDATA[<p><code>The site's live.</code></p>
 
 <p>It took a lot of work and testing to finally launch the beta version of <a href="https://www.facebook.com/jeequery">JEEQuery</a>. It is something I have been working on for a long time, which brought forward various challenges and hurdles, and kept me occupied all this time.</p>
@@ -39,14 +39,14 @@ Although I handled the backends of the website, I got notable aid from my bother
 <p>Here is the snapshot of About page:</p>
 
 <center>
-    <img class="[erimg]" src="http://bhrigu123.github.io/images/jq/about.png" title="[About [About]]" ><br>
+    <img class="[erimg]" src="http://bhrigu123.github.io//images/jq/about.png" title="[About [About]]" ><br>
 </center>
 
 
 <p><br><br></p>
 
 <center>
-    <img class="[erimg]" src="http://bhrigu123.github.io/images/jq/profile_500.png" width="300" height="300" title="[About [About]]" ><br>
+    <img class="[erimg]" src="http://bhrigu123.github.io//images/jq/profile_500.png" width="300" height="300" title="[About [About]]" ><br>
     <center><small>Logo</small></center>
 </center>
 
@@ -68,9 +68,9 @@ Although I handled the backends of the website, I got notable aid from my bother
   
   <entry>
     <title type="html"><![CDATA[Starting Django Project]]></title>
-    <link href="http://bhrigu123.github.io/blog/2015/07/06/starting-django-project/"/>
+    <link href="http://bhrigu123.github.io//blog/2015/07/06/starting-django-project/"/>
     <updated>2015-07-06T09:25:47+05:30</updated>
-    <id>http://bhrigu123.github.io/blog/2015/07/06/starting-django-project</id>
+    <id>http://bhrigu123.github.io//blog/2015/07/06/starting-django-project</id>
     <content type="html"><![CDATA[<p><code>django-admin.py startproject newproj</code><br>
 I had learnt the django framework basics quite a while ago, but never worked on or made a complete functional project.<br>
 To kick off, I&rsquo;m starting a basic Q&amp;A app using django, and plan to learn along with the challenges I face, and discover new stuff.<!--more--></p>
@@ -81,7 +81,7 @@ Moreover, programming in python makes our code clean and formatted, allows easy 
 <p>For me, I only like handling the backends of a website, while the templates or webpage/layout designing is not really my cup of tea.<br></p>
 
 <center>
-    <img class="[erimg]" src="http://bhrigu123.github.io/images/startdjango/er.jpg" width="500"><br>
+    <img class="[erimg]" src="http://bhrigu123.github.io//images/startdjango/er.jpg" width="500"><br>
     <small>
         That's right. Made a rough ER diagram also ;)
     </small> 
@@ -96,9 +96,9 @@ Moreover, programming in python makes our code clean and formatted, allows easy 
   
   <entry>
     <title type="html"><![CDATA[How to Install Ubuntu With Dual Boot (Easy Step-wise Guide)]]></title>
-    <link href="http://bhrigu123.github.io/blog/2015/06/22/how-to-install-ubuntu-with-dual-boot-easy-step-wise-guide/"/>
+    <link href="http://bhrigu123.github.io//blog/2015/06/22/how-to-install-ubuntu-with-dual-boot-easy-step-wise-guide/"/>
     <updated>2015-06-22T14:30:32+05:30</updated>
-    <id>http://bhrigu123.github.io/blog/2015/06/22/how-to-install-ubuntu-with-dual-boot-easy-step-wise-guide</id>
+    <id>http://bhrigu123.github.io//blog/2015/06/22/how-to-install-ubuntu-with-dual-boot-easy-step-wise-guide</id>
     <content type="html"><![CDATA[<p>Here is the easy step-wise installation guide to install Ubuntu along side with your Windows (dual boot)</p>
 
 <h4>Step 1: Make sure you have free, unallocated space</h4>
@@ -109,7 +109,7 @@ In case you have 3 or more partitions, transfer all files from one partition to 
 
 <p><em>[<code>Note:</code> If you have any important files on your PC, you must always back up your data in the proper drive or on another device /drive is possible. You are responsible for any changes being made on the computer, and always read the instructions carefully]</em></p>
 
-<p><img class="[diskimg]" src="http://bhrigu123.github.io/images/ubuntu/diskmgmt.jpg" width="600">
+<p><img class="[diskimg]" src="http://bhrigu123.github.io//images/ubuntu/diskmgmt.jpg" width="600">
 <br>
 The removed space is shown in black as &lsquo;Unallocated Space&rsquo;, where we&rsquo;ll install Ubuntu. <br>
 (You can also shrink other volumes to create unallocated space, as required. I recommend at least 60 gb of space for Ubuntu, depending upon the type of work you will be doing.)</p>
@@ -131,23 +131,23 @@ Connect to the internet if possibe, and <em>check</em> on &lsquo;Install Updates
 <h4>Step 4: Creating Partitions for Ubuntu</h4>
 
 <p>When it asks for the type of installation, select &lsquo;Something else&rsquo;.
-<img class="[diskimg]" src="http://bhrigu123.github.io/images/ubuntu/somethingelse.png" width="600" height="800" title="[Select 'Something else' [Installation type]]" ></p>
+<img class="[diskimg]" src="http://bhrigu123.github.io//images/ubuntu/somethingelse.png" width="600" height="800" title="[Select 'Something else' [Installation type]]" ></p>
 
 <p>Now you would see the partitions of your disk as: <br>
-<img class="[diskimg]" src="http://bhrigu123.github.io/images/ubuntu/partitions.jpeg" width="500" height="500" title="[[partitions]]" > <br>
+<img class="[diskimg]" src="http://bhrigu123.github.io//images/ubuntu/partitions.jpeg" width="500" height="500" title="[[partitions]]" > <br>
 In this image, sda1, sda2 and sda4 are the current partitions of the disk, and <strong>free space</strong> is the unallocated space. <br>
 (If you see <em>unusable space</em> instead of <em>free space</em>, that means your computer already has 4 primary partitions, and you will need to delete one of the partition. Partition could be deleted from here also by selecting that partition and clicking on the minus &lsquo;-&rsquo; sign below (but data in that drive will be lost. Therefore, open windows, back up your data, and delete partition from there) )</p>
 
 <p>Select the <em>free space</em>, click on &lsquo;+&rsquo; to create a partition for the root folder as: <br>
-<img class="[diskimg]" src="http://bhrigu123.github.io/images/ubuntu/createpart.png" width="500"> <br>
+<img class="[diskimg]" src="http://bhrigu123.github.io//images/ubuntu/createpart.png" width="500"> <br>
 Here, 20gb is being allocated for your workspace in Ubuntu. I recommend around 50-100 GB (depending on the work you will be doing.)</p>
 
 <p>Select <em>free space</em> and Click on &lsquo;+&rsquo; again to create &lsquo;Swap Area&rsquo; as: <br>
 <em>If you have less than 4GB of RAM, select the size of swap area equal to your RAM, else select 4GB. Since I have 4GB RAM, I&rsquo;ll select 4096 MB for Swap Area</em> <br>
-<img class="[diskimg]" src="http://bhrigu123.github.io/images/ubuntu/swaparea.jpeg" width="500"> <br></p>
+<img class="[diskimg]" src="http://bhrigu123.github.io//images/ubuntu/swaparea.jpeg" width="500"> <br></p>
 
 <p>Create another partition for &lsquo;Boot&rsquo; of 512 MB as:
-<img class="[diskimg]" src="http://bhrigu123.github.io/images/ubuntu/newboot.jpg" width="500"></p>
+<img class="[diskimg]" src="http://bhrigu123.github.io//images/ubuntu/newboot.jpg" width="500"></p>
 
 <p>Now you have successfully created your partitions. The root directory <em>&lsquo;/&rsquo;</em> is where Ubuntu will be installed, and where you will save your files. Proceed and Confirm <em>&lsquo;Write Changes to Disk&rsquo;</em>.</p>
 
@@ -156,7 +156,7 @@ Here, 20gb is being allocated for your workspace in Ubuntu. I recommend around 5
 <h4>Step 5: Installation Complete</h4>
 
 <p>When installation completes and the computer restarts, you will be asked to select an OS to boot. <br>
-<img class="[diskimg]" src="http://bhrigu123.github.io/images/ubuntu/ubuntuboot.jpg" width="500"> <br>
+<img class="[diskimg]" src="http://bhrigu123.github.io//images/ubuntu/ubuntuboot.jpg" width="500"> <br>
 The first option will launch Ubuntu.
 The last <em>Windows loader</em> option will launch you Windows, like it used to before.</p>
 
@@ -167,9 +167,9 @@ Comment here if you still have any doubts or problems, or for your feedback.</p>
   
   <entry>
     <title type="html"><![CDATA[The Game Is On]]></title>
-    <link href="http://bhrigu123.github.io/blog/2015/06/18/the-game-is-on/"/>
+    <link href="http://bhrigu123.github.io//blog/2015/06/18/the-game-is-on/"/>
     <updated>2015-06-18T23:01:16+05:30</updated>
-    <id>http://bhrigu123.github.io/blog/2015/06/18/the-game-is-on</id>
+    <id>http://bhrigu123.github.io//blog/2015/06/18/the-game-is-on</id>
     <content type="html"><![CDATA[<p>So after setting up octopress and learning how to use it and deploy using Github, I have finally set out to blogging, which I wanted to start for a long time but was everytime too lazy to set up my computer.</p>
 
 <p>Now, for a novice like me, this blogging technique is much different from the regular blogging websites, like Wordpress, since you have to work <!--more--> using the terminal (shell) of your system, and to be honest, it is much more fun this way. It gives you more of a hacker&rsquo;s feel as you have to do a lot of shell scripting. Moreover, markdown language makes writing posts easier as well as interesting.<br>
