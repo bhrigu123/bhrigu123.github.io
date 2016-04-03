@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Linux | Bhrigu Srivastava]]></title>
+  <link href="http://bhrigu123.github.io//blog/categories/linux/atom.xml" rel="self"/>
+  <link href="http://bhrigu123.github.io//"/>
+  <updated>2016-04-03T23:36:56+05:30</updated>
+  <id>http://bhrigu123.github.io//</id>
+  <author>
+    <name><![CDATA[Bhrigu Srivastava]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu | Linux: Some Handy Tools to Edit Audio, Video and Images]]></title>
+    <link href="http://bhrigu123.github.io//blog/2016/04/01/ubuntu-some-handy-tools-to-edit-audio-slash-video/"/>
+    <updated>2016-04-01T19:56:20+05:30</updated>
+    <id>http://bhrigu123.github.io//blog/2016/04/01/ubuntu-some-handy-tools-to-edit-audio-slash-video</id>
+    <content type="html"><![CDATA[<center>
+    <img class="[erimg]" src="/images/ubuntutools/ubuntu.jpg" title="Ubuntu" >
+</center>
+
+
+<p><br></p>
+
+<p>There are several tools &amp; libraries to edit audio/video files in Linux, such as change dimensions, video converter, resize/rotate images etc.<br>
+Mainly we&rsquo;ll use avconv, which can be used as command line in <strong>Linux</strong>.</p>
+
+<!-- more -->
+
+
+<h3>1. Resize / Rotate images</h3>
+
+<p>In <strong>Ubuntu</strong>, use <strong>nautilus-image-converter</strong>. It adds 2 new menu items, when you right click an image: resize and rotate. To install, run the command on your terminal:</p>
+
+<p><code>sudo apt-get install nautilus-image-converter</code></p>
+
+<p>Restart nautilus by running <code>nautilus -q</code> , and open your file browser. Right click on an image to see options for Resizing and Rotating.</p>
+
+<center>
+    <img class="[erimg]" src="/images/ubuntutools/resize.png" title="Resize,Rotate images" >
+</center>
+
+
+<p><br>
+You can even resize multiple images by selecting those images, right click and Resize.</p>
+
+<hr>
+
+
+<h3>2. Trim / cut an audio or video</h3>
+
+<p>Use a command line tool <code>avconv</code> to trim audio/video. Install as:</p>
+
+<p><code>sudo apt-get install libav-tools</code></p>
+
+<p>To trim an audio/video run the command</p>
+
+<p><code>avconv -i srcFileName -c:a copy -c:v copy -ss 00:03:40 -t 00:01:12 targetFileName</code></p>
+
+<p>Time parameter is given in format hh:mm:ss <br>
+The first time parameter is the start time. The second time parameter is the <strong>duration</strong> of the clip that you want from the start time. (<em>not the end time</em>)</p>
+
+<hr>
+
+
+<h3>3. Change video resolution</h3>
+
+<p>Again <code>avconv</code> is used for this. (install as stated above)</p>
+
+<p>For eg. to change resolution of a video to <strong>640x480</strong>, run the command</p>
+
+<p><code>avconv -i video.mp4 -s 640x480 output.mp4</code></p>
+
+<p><em>[Note]: If the above command doesn&rsquo;t run and gives you a warning to run with -strict -2, Run the command as <code>avconv -i video.mp4 -s 640x480 -strict -2 output.mp4</code></em></p>
+
+<hr>
+
+
+<h3>4. Change video format</h3>
+
+<p>Using avconv to change format of a video, for eg, from <code>mov</code> to <code>mp4</code>. (install as stated above)</p>
+
+<p><code>avconv -i video.mov -strict -2 output.mp4</code></p>
+
+<hr>
+
+
+<h3>5. Extract audio from Video file</h3>
+
+<p>Using avconv, run the command</p>
+
+<p><code>avconv -i video.mp4 -vn -f mp3 sound.mp3</code></p>
+]]></content>
+  </entry>
+  
+</feed>
