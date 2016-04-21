@@ -49,3 +49,10 @@ footer[role=contentinfo] {
 #wrap {
   background-color: #f8f8f8;
 }
+
+@media (min-width: 1120px) {
+  .page-content {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+} 
