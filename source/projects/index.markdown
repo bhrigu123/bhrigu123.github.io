@@ -12,19 +12,11 @@ sidebar: true
 			<div>
 				<p><a href="http://jeequery.com>" target="_blank"><h3 class="">JEEQuery</h3></a></p>
 				<p>A Q&A platform for students preparing for IIT-JEE and other engineering entrance exams.</p>
-				<p>Built with Django framework with bootstrap, and deployed on AWS EC2 server</p>
+				<p>Built with Django framework and bootstrap, and deployed on AWS EC2 server</p>
 				<div class="text-center">
 					{% img [diskimg] /images/projects/jq_home.png 700 300 [[JEEQuery Home]] %}
 				</div><br>
 				<p>Students can post their questions and ask doubts, can use various pre-defined tags, answer questions, upvote, downvote, or even favourite a question</p>
-			</div>
-			<hr>
-			<div>
-				<p><a href="http://bhrigu123.github.io/classifier" target="_blank"><h3>Classifier</h3></a></p>
-				<p>
-				A python module that organizes files in your directories, by classifying them into folders of music, pdfs, images, etc.</p>
-				<p>Received over 580+ stars on the GitHub repo</p>
-				<p>Other features include: classifying by date, classifying specific files into specific folders.</p>
 			</div>
 			<hr>
 			<div>
@@ -40,5 +32,15 @@ sidebar: true
 				</p>
 			</div>
 			<hr>
+			<div>
+				<p><a href="http://bhrigu123.github.io/classifier" target="_blank"><h3>Classifier</h3></a></p>
+				<p>
+				A python module that organizes files in your directories, by classifying them into folders of music, pdfs, images, etc.</p>
+				<p>Received over 580+ stars on the GitHub repo</p>
+				<p>Other features include: classifying by date, classifying specific files into specific folders.</p>
+			</div>
+			<hr>
+			
+			
 	</div>
 </div>
