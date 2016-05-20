@@ -4,7 +4,7 @@
   <title><![CDATA[Bhrigu Srivastava]]></title>
   <link href="http://bhrigu123.github.io//atom.xml" rel="self"/>
   <link href="http://bhrigu123.github.io//"/>
-  <updated>2016-04-20T23:11:13+05:30</updated>
+  <updated>2016-05-21T02:13:48+05:30</updated>
   <id>http://bhrigu123.github.io//</id>
   <author>
     <name><![CDATA[Bhrigu Srivastava]]></name>
@@ -12,6 +12,145 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Django: How to Add ForeignKey to Multiple Models]]></title>
+    <link href="http://bhrigu123.github.io//blog/2016/05/21/django-how-to-add-foreignkey-to-multiple-models/"/>
+    <updated>2016-05-21T01:28:37+05:30</updated>
+    <id>http://bhrigu123.github.io//blog/2016/05/21/django-how-to-add-foreignkey-to-multiple-models</id>
+    <content type="html"><![CDATA[<p>Basically, how to make relation to more than one type of model, using one ForeignKey. (using <em>contenttypes</em> app and <em>Generic Relations</em>)</p>
+
+<p>Suppose you have two models: <code>Article</code> and <code>Post</code> <!--more--></p>
+
+<figure class='code'><figcaption><span>models.py</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">class</span> <span class="nc">Article</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+</span><span class='line'>  <span class="n">content</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">class</span> <span class="nc">Post</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+</span><span class='line'>  <span class="n">content</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now, we’ll have a <code>Comment</code> model. Here, both an <code>Article</code> or a <code>Post</code> can have a comment. So, how to add a ForeignKey value in the Comment model, which could point to either of the above models.</p>
+
+<p>We’ll use the concept of <em>Generic Relation</em>, which allows us to do so. Django includes a <a href="https://docs.djangoproject.com/en/dev/ref/contrib/contenttypes/#module-django.contrib.contenttypes">contenttypes</a> application, and relations between your models and ContentType model in that application can also be used to enable “generic” relationships between an instance of one of your models and instances of any model you have installed.</p>
+
+<p>The format of our <strong>Comment</strong> model will be like:</p>
+
+<figure class='code'><figcaption><span>models.py</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="kn">from</span> <span class="nn">django.contrib.contenttypes.fields</span> <span class="kn">import</span> <span class="n">GenericForeignKey</span>
+</span><span class='line'><span class="kn">from</span> <span class="nn">django.contrib.contenttypes.models</span> <span class="kn">import</span> <span class="n">ContentType</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">class</span> <span class="nc">Comment</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+</span><span class='line'>  <span class="n">comm</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">content_type</span> <span class="o">=</span>   <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="n">ContentType</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">object_id</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">PositiveIntegerField</span><span class="p">()</span>
+</span><span class='line'>  <span class="n">content_object</span><span class="o">=</span><span class="n">GenericForeignKey</span><span class="p">(</span><span class="s">&#39;content_type&#39;</span><span class="p">,</span> <span class="s">&#39;object_id&#39;</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>(The last three lines will be same every time you want to use generic relations like this.)</p>
+
+<p>Now, we can relate a <code>Comment</code> object to any kind of model, by sending it which <em>model</em> we have to relate it to in the <code>content_type</code> parameter, and the <em>id</em> of the object of that model to relate to in the <code>object_id</code> parameter.<br>
+(or by just sending the object to relate to, to the <em>content_object</em> parameter of <code>Comment</code>, as shown below)</p>
+
+<p>Now, we’ll create the <strong>Comment</strong> instances, and relate it to either an <strong>Article</strong> instance, or a <strong>Post</strong> instance.</p>
+
+<p>To relate a <em>Comment</em> to an <em>Article</em> instance:</p>
+
+<figure class='code'><figcaption><span>shell</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">art</span> <span class="o">=</span> <span class="n">Article</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">c</span> <span class="o">=</span> <span class="n">Comment</span><span class="p">(</span><span class="n">content_object</span><span class="o">=</span><span class="n">art</span><span class="p">,</span> <span class="n">comm</span><span class="o">=</span><span class="s">&#39;asdf&#39;</span><span class="p">)</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">c</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">c</span><span class="o">.</span><span class="n">content_object</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">Article</span><span class="p">:</span> <span class="n">article1</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>To relate a <em>Comment</em> to a <em>Post</em> instance:</p>
+
+<figure class='code'><figcaption><span>shell</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">pos</span><span class="o">=</span> <span class="n">Post</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">c</span><span class="o">=</span> <span class="n">Comment</span><span class="p">(</span><span class="n">content_object</span><span class="o">=</span><span class="n">pos</span><span class="p">,</span> <span class="n">comm</span><span class="o">=</span><span class="s">&#39;new comment&#39;</span><span class="p">)</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">c</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">c</span><span class="o">.</span><span class="n">content_object</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">Post</span><span class="p">:</span> <span class="n">post1</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Reverse Generic Relations</h3>
+
+<p>Now, to get all the comments related to an <code>Article</code> or a <code>Post</code>, we can use the <strong>GenericRelation</strong> class for this.</p>
+
+<p>We need to define a new attribute under the Article and Post models. Add the attribute for reverse query under your models as:</p>
+
+<figure class='code'><figcaption><span>models.py</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="kn">from</span> <span class="nn">django.contrib.contenttypes.fields</span> <span class="kn">import</span> <span class="n">GenericRelation</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">class</span> <span class="nc">Article</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+</span><span class='line'>    <span class="n">content</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">comments</span> <span class="o">=</span> <span class="n">GenericRelation</span><span class="p">(</span><span class="n">Comment</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">class</span> <span class="nc">Post</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+</span><span class='line'>    <span class="n">content</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">comments</span> <span class="o">=</span> <span class="n">GenericRelation</span><span class="p">(</span><span class="n">Comment</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now, a query of <code>model_object.comments.all()</code> will give all the comments related to that object. Like, if <em>art</em> is an Article instance, and <em>pos</em> is a Post instance:</p>
+
+<figure class='code'><figcaption><span>shell</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">art</span><span class="o">.</span><span class="n">comments</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">QuerySet</span> <span class="p">[</span><span class="o">&lt;</span><span class="n">Comment</span><span class="p">:</span> <span class="n">asdf</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">Comment</span><span class="p">:</span> <span class="n">test</span><span class="o">&gt;</span><span class="p">]</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&gt;&gt;&gt;</span> <span class="n">pos</span><span class="o">.</span><span class="n">comments</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">QuerySet</span> <span class="p">[</span><span class="o">&lt;</span><span class="n">Comment</span><span class="p">:</span> <span class="n">new_comment</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">Comment</span><span class="p">:</span> <span class="n">test2</span><span class="o">&gt;</span><span class="p">]</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That is all you need to know for basic working required for ‘relating an instance to multiple Models’.</p>
+
+<p>You can know more about contenttypes application, ContentType model and GenericRelations on their docs: <a href="https://docs.djangoproject.com/en/dev/ref/contrib/contenttypes/">The contenttypes framework</a>.</p>
+
+<hr>
+
+
+<blockquote><p><em>This article is also posted on my Medium account at: <a href="https://medium.com/@bhrigu/django-how-to-add-foreignkey-to-multiple-models-394596f06e84#.vtjdo4vz5">Django: How to add foreign key to multiple models</a></em></p></blockquote>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[A Song of Ice and Fire: Analysis]]></title>
