@@ -5,6 +5,24 @@
       <header role="banner">
         {% include navigation.html %}
       </header>
+      {% if page.location == 'index' %}
+      <div id="banner-image">
+        <div class="layer">
+          <div id="banner-text">
+            <h1 class="page-title">{{ site.title }}</h1>
+            <p class="page-desc">
+              Engineering Undergrad @ Delhi Technological University<br>
+              Loves Programming and building stuff<br>
+            </p>
+            <br>
+            <br>
+            <p class="page-links">
+              <a href="/projects">Projects</a> | <a href="/Resume.pdf" target="_blank">Resume</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      {% endif %}
       <div id="main" role="main" class="container">
         <div id="content">
           {{ content | expand_urls: root_url }}

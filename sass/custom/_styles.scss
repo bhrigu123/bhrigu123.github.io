@@ -38,21 +38,59 @@ footer[role=contentinfo] {
   }
 }
 
+.page-content {
+  margin:40px auto;
+  max-width:750px;
+  line-height:1.6;
+  padding:0 10px;
+}
+
 .entry-content p{
-  font-family: "Merriweather", serif;
-    letter-spacing: 0.01rem;
-    font-size: 1.8rem;
-    line-height: 1.5em;
-    margin: 0 0 1.75em 0;
+  font-size:18px;
+  color: #444;
 }
 
-#wrap {
-  background-color: #f8f8f8;
+h1,h2,h3{
+  line-height:1.2
 }
 
-@media (min-width: 1120px) {
-  .page-content {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-} 
+#banner-image {
+  position: relative;
+  height: 60vh; 
+  background-image: url("/images/bicycle2.jpg");
+  background-size:     cover;                      
+  background-repeat:   no-repeat;
+  background-position: center center;
+}
+#banner-text {
+  position: absolute;
+  color: white;
+  width: 100%;
+  top: 17%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.layer {
+    background-color: rgba(93, 93, 90, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.page-title {
+  font-size: 5rem;
+  font-weight: 700;
+}
+.page-desc {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 100;
+}
+.page-links a{
+  font-size: 2.2rem;
+  line-height: 1.5;
+  color: white;
+  text-decoration: none;
+}
