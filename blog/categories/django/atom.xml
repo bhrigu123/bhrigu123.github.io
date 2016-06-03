@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Django | Bhrigu Srivastava]]></title>
+  <link href="http://bhrigu123.github.io//blog/categories/django/atom.xml" rel="self"/>
+  <link href="http://bhrigu123.github.io//"/>
+  <updated>2016-06-03T13:17:18+05:30</updated>
+  <id>http://bhrigu123.github.io//</id>
+  <author>
+    <name><![CDATA[Bhrigu Srivastava]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Django: How to Add ForeignKey to Multiple Models]]></title>
+    <link href="http://bhrigu123.github.io//blog/2016/05/21/django-how-to-add-foreignkey-to-multiple-models/"/>
+    <updated>2016-05-21T01:28:37+05:30</updated>
+    <id>http://bhrigu123.github.io//blog/2016/05/21/django-how-to-add-foreignkey-to-multiple-models</id>
+    <content type="html"><![CDATA[<p>Basically, how to make relation to more than one type of model, using one ForeignKey. (using <em>contenttypes</em> app and <em>Generic Relations</em>)</p>
+
+<p>Suppose you have two models: <code>Article</code> and <code>Post</code> <!--more--></p>
+
+<pre><code class="python models.py">class Article(models.Model):
+    content = models.CharField(max_length=100)
+
+class Post(models.Model):
+    content = models.CharField(max_length=100)
+</code></pre>
+
+<p>Now, we’ll have a <code>Comment</code> model. Here, both an <code>Article</code> or a <code>Post</code> can have a comment. So, how to add a ForeignKey value in the Comment model, which could point to either of the above models.</p>
+
+<p>We’ll use the concept of <em>Generic Relation</em>, which allows us to do so. Django includes a <a href="https://docs.djangoproject.com/en/dev/ref/contrib/contenttypes/#module-django.contrib.contenttypes">contenttypes</a> application, and relations between your models and ContentType model in that application can also be used to enable “generic” relationships between an instance of one of your models and instances of any model you have installed.</p>
+
+<p>The format of our <strong>Comment</strong> model will be like:</p>
+
+<pre><code class="python models.py">from django.contrib.contenttypes.fields import GenericForeignKey
+from django.contrib.contenttypes.models import ContentType
+
+class Comment(models.Model):
+    comm = models.CharField(max_length=50)
+
+    content_type =   models.ForeignKey(ContentType)
+    object_id = models.PositiveIntegerField()
+    content_object=GenericForeignKey('content_type', 'object_id')
+</code></pre>
+
+<p>(The last three lines will be same every time you want to use generic relations like this.)</p>
+
+<p>Now, we can relate a <code>Comment</code> object to any kind of model, by sending it which <em>model</em> we have to relate it to in the <code>content_type</code> parameter, and the <em>id</em> of the object of that model to relate to in the <code>object_id</code> parameter.<br>
+(or by just sending the object to relate to, to the <em>content_object</em> parameter of <code>Comment</code>, as shown below)</p>
+
+<p>Now, we’ll create the <strong>Comment</strong> instances, and relate it to either an <strong>Article</strong> instance, or a <strong>Post</strong> instance.</p>
+
+<p>To relate a <em>Comment</em> to an <em>Article</em> instance:</p>
+
+<pre><code class="python shell">&gt;&gt;&gt; art = Article.objects.get(id=1)
+&gt;&gt;&gt; c = Comment(content_object=art, comm='asdf')
+&gt;&gt;&gt; c.save()
+&gt;&gt;&gt; c.content_object
+&lt;Article: article1&gt;
+</code></pre>
+
+<p>To relate a <em>Comment</em> to a <em>Post</em> instance:</p>
+
+<pre><code class="python shell">&gt;&gt;&gt; pos= Post.objects.get(id=1)
+&gt;&gt;&gt; c= Comment(content_object=pos, comm='new comment')
+&gt;&gt;&gt; c.save()
+&gt;&gt;&gt; c.content_object
+&lt;Post: post1&gt;
+</code></pre>
+
+<h3>Reverse Generic Relations</h3>
+
+<p>Now, to get all the comments related to an <code>Article</code> or a <code>Post</code>, we can use the <strong>GenericRelation</strong> class for this.</p>
+
+<p>We need to define a new attribute under the Article and Post models. Add the attribute for reverse query under your models as:</p>
+
+<pre><code class="python models.py">from django.contrib.contenttypes.fields import GenericRelation
+
+class Article(models.Model):
+    content = models.CharField(max_length=100)
+    comments = GenericRelation(Comment)
+
+class Post(models.Model):
+    content = models.CharField(max_length=100)
+    comments = GenericRelation(Comment)
+</code></pre>
+
+<p>Now, a query of <code>model_object.comments.all()</code> will give all the comments related to that object. Like, if <em>art</em> is an Article instance, and <em>pos</em> is a Post instance:</p>
+
+<pre><code class="python shell">&gt;&gt;&gt; art.comments.all()
+&lt;QuerySet [&lt;Comment: asdf&gt;, &lt;Comment: test&gt;]&gt;
+
+&gt;&gt;&gt; pos.comments.all()
+&lt;QuerySet [&lt;Comment: new_comment&gt;, &lt;Comment: test2&gt;]&gt;
+</code></pre>
+
+<p>That is all you need to know for basic working required for ‘relating an instance to multiple Models’.</p>
+
+<p>You can know more about contenttypes application, ContentType model and GenericRelations on their docs: <a href="https://docs.djangoproject.com/en/dev/ref/contrib/contenttypes/">The contenttypes framework</a>.</p>
+
+<hr>
+
+
+<blockquote><p><em>This article is also posted on my Medium account at: <a href="https://medium.com/@bhrigu/django-how-to-add-foreignkey-to-multiple-models-394596f06e84#.vtjdo4vz5">Django: How to add foreign key to multiple models</a></em></p></blockquote>
+]]></content>
+  </entry>
+  
+</feed>
