@@ -10,7 +10,6 @@ Before I leave for Hyderabad in a few days, I thought of paying another visit to
 <!-- more -->
 I usually do not carry my cell phone whenever I go out for a walk, but this time I thought of capturing some moments and, well, share on my blog.
 
-[ *The images may be slow to load, due to high quality pics. Please bear with it* ]
 
 I take the road along my colony to cover up 1.5 KMs to reach the garden.
 
@@ -82,7 +81,7 @@ I take the road along my colony to cover up 1.5 KMs to reach the garden.
 <div style="height:1060px" class="invisible-div"></div>
 
 
-<p style="text-align: center;">Some school children their picnic. I now remember my school days when we were brought here a lot. Those were some glorious times</p>
+<p style="text-align: center;">Some school children on their picnic. I now remember my school days when we were brought here a lot. Those were some glorious times</p>
 <img style="width:100%; position:absolute; left:0" src="/images/lodhi/12.jpg">
 <div style="height:1060px" class="invisible-div"></div>
 
