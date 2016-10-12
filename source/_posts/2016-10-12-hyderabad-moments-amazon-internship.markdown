@@ -8,9 +8,10 @@ categories:
 
 My 2 month internship at Amazon was an amazing experience and a new phase, be it living separately for the first time in a different city, or my first ever internship/job experience. <!--more-->  
 
-Hyderabad turned out to be a pretty nice place to stay. Our stay for the first two weeks of the internship was taken care of at a Guest House. It was located in Telecom Nagar and turned out to be much better than our expectations. We were each given lavish rooms and great facilities.
+Hyderabad turned out to be a pretty nice place to be in. Our stay for the first two weeks of the internship was taken care of at a Guest House. It was located in Telecom Nagar and turned out to be much better than our expectations. We were each given lavish rooms and great facilities.
 <center>
 	{% img [erimg] /images/hyd/room.jpg Room %}
+	<small>Stay at the Guest house</small>
 </center><br>
 
 However, after two weeks of relaxed stay at the Guest House, it was hard to adapt to the conditions of PG, which we found in a nearby place only.
@@ -39,8 +40,8 @@ I also made the most of my time at my workplace, besides work, meeting new peopl
 
 Being a sports lover, I liked the fact that my team indulged in a lot of sports activities too. Every Saturday (and most of Wednesdays) they would go out to play Badminton in the academy. Those were some great times too.
 
-Staying in a Hostel/PG was a completely different experience. With all college friends in the surrounding rooms, the time spent was great, and my roommate (Parikh) turned out to be a pretty chill guy. Turned out, we had the same taste in music, liked playing cricket and.....loved eating cheetos. One thing I ate the most throughout the 2 months would be Cheetos I'm pretty sure.<br>
-We even bought a cricket ball and would play cricket on our PG's common area.
+Staying in a Hostel/PG was a completely different experience. With all college friends in the surrounding rooms, the time spent was great, and my roommate turned out to be a pretty chill guy. Turned out, we had the same taste in music, liked playing cricket and.....loved eating cheetos. One thing I ate the most throughout the 2 months would be Cheetos I'm pretty sure.<br>
+We even bought a cricket ball and would play cricket in our PG's common area.
 
 <center>
 	{% img [erimg] /images/hyd/pg.jpg PG %}
