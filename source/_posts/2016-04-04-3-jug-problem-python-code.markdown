@@ -150,4 +150,4 @@ Starting work...
 
 and that's pretty much it.
 
-So next time you are given to solve a Water Jug Problem, and if you cannot, a bomb will detonate and you could die, think carefully. [*something like in Die Hard 3*]
+Leave in the comments if you have anything in mind.
