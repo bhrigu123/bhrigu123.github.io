@@ -10,7 +10,7 @@ categories:
 
 <hr>
 
-__*Jan '15:*__  Launched [DTU Mart](http://dtumart.com), which is an online portal I made for my college students to exchange books with each other. It was such a thrill to launch another website. It received 200+ ads in the first 3 weeks of launch only, and gained great response. <br>
+__*Jan '16:*__  Launched [DTU Mart](http://dtumart.com), which is an online portal I made for my college students to exchange books with each other. It was such a thrill to launch another website. It received 200+ ads in the first 3 weeks of launch only, and gained great response. <br>
 
 
 <center>
@@ -20,12 +20,12 @@ Went a little light with publicity later, which I guess will have to work upon.
 
 <hr>
 
-__*Feb '15:*__ Finished reading the *"A Song of Ice and Fire"* book series, which I started in the preceding December. I have no words to explain how awesome the book series was, and how it blew me away. <br>
+__*Feb '16:*__ Finished reading the *"A Song of Ice and Fire"* book series, which I started in the preceding December. I have no words to explain how awesome the book series was, and how it blew me away. <br>
 Unable to wait for the next book, *The Winds of Winter*, I still re-read the whole series again & again.
 
 <hr> 
 
-__*April '15:*__ New guitar :) <br>
+__*April '16:*__ New guitar :) <br>
 <center>
 	{% img [erimg] /images/2016/guitar.jpeg Guitar %} <br>
 	<small>Yamaha F 310</small>
@@ -34,14 +34,14 @@ After rocking on my electric guitar for the past years, it was time for some aco
 
 <hr>
 
-__*Jun-Aug '15:*__ Amazon Internship <br>
+__*Jun-Aug '16:*__ Amazon Internship <br>
 Had an amazing time during my internship at Hyderabad. It was a great learning, networking, lots-of-new-things moment. (more about it on my previous [Blog post](http://bhrigu.me/blog/2016/10/12/hyderabad-moments-amazon-internship/) ) 
 
 What added to the joy was the fact that I also received a PPO from Amazon, at the end of my intern.
 
 <hr>
 
-__*Sep '15:*__ New Bicycle ;) <br>
+__*Sep '16:*__ New Bicycle ;) <br>
 <center>
 	{% img [erimg] /images/2016/bike.jpeg Cycle %} <br>
 </center><br>
@@ -49,7 +49,7 @@ Firefox Cyclone D 26. Oh the joy of riding it.
 
 <hr>
 
-__*Dec '15:*__ Started working as a Teaching Assistant at Coding Ninjas. Also a great experience.
+__*Dec '16:*__ Started working as a Teaching Assistant at Coding Ninjas. Also a great experience.
 
 <br><hr><br>
 
