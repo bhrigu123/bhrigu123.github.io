@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Django | Bhrigu Srivastava]]></title>
-  <link href="http://bhrigu123.github.io//blog/categories/django/atom.xml" rel="self"/>
-  <link href="http://bhrigu123.github.io//"/>
-  <updated>2017-01-11T20:00:24+05:30</updated>
-  <id>http://bhrigu123.github.io//</id>
+  <link href="http://bhrigu.me/blog/categories/django/atom.xml" rel="self"/>
+  <link href="http://bhrigu.me/"/>
+  <updated>2017-01-13T23:46:34+05:30</updated>
+  <id>http://bhrigu.me/</id>
   <author>
     <name><![CDATA[Bhrigu Srivastava]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Django: How to Add ForeignKey to Multiple Models]]></title>
-    <link href="http://bhrigu123.github.io//blog/2016/05/21/django-how-to-add-foreignkey-to-multiple-models/"/>
+    <link href="http://bhrigu.me/blog/2016/05/21/django-how-to-add-foreignkey-to-multiple-models/"/>
     <updated>2016-05-21T01:28:37+05:30</updated>
-    <id>http://bhrigu123.github.io//blog/2016/05/21/django-how-to-add-foreignkey-to-multiple-models</id>
+    <id>http://bhrigu.me/blog/2016/05/21/django-how-to-add-foreignkey-to-multiple-models</id>
     <content type="html"><![CDATA[<p>Basically, how to make relation to more than one type of model, using one ForeignKey. (using <em>contenttypes</em> app and <em>Generic Relations</em>)</p>
 
 <p>Suppose you have two models: <code>Article</code> and <code>Post</code> <!--more--></p>
