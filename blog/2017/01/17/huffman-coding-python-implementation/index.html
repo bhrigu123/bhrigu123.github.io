@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Huffman Coding - Python Implementation - Bhrigu Srivastava</title>
+  <meta name="author" content="Bhrigu Srivastava">
+
+   <meta name="description" content="Personal website of Bhrigu Srivastava"> 
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://bhrigu.me/blog/2017/01/17/huffman-coding-python-implementation/">
+  <link href="/favicon.png" type="image/png" rel="icon">
+  <link href="/atom.xml" rel="alternate" title="Bhrigu Srivastava" type="application/atom+xml">
+
+  <!-- http://opengraphprotocol.org/ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://bhrigu.me/blog/2017/01/17/huffman-coding-python-implementation/">
+  <meta property="og:title" content="Huffman Coding - Python Implementation - Bhrigu Srivastava">
+  
+
+  <script src="/javascripts/libs/jquery/jquery-2.1.3.min.js"></script>
+
+<link href="/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="/assets/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+
+<!-- Hotjar Tracking Code for http://bhrigu123.github.io -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:291872,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+  
+  <link href="/stylesheets/screen.css" media="screen, projection, print" rel="stylesheet" type="text/css">
+
+  
+   <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-64358360-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+
+</head>
+
+  <body   >
+    <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+    <div id="wrap">
+      
+        <header role="banner">
+          <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" title="toggle navbar" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Bhrigu Srivastava</a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a rel="index" href="/">Blog</a>
+                </li>
+                <li >
+                    <a rel="index" href="/projects">Projects</a>
+                </li>
+                <li >
+                    <a rel="index" href="/about">About</a>
+                </li>
+                <li >
+                    <a href="/blog/archives">Archives</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="subscribe-rss" href="/atom.xml" title="subscribe via RSS">
+                        <span class="visible-xs">RSS</span>
+                        <img class="hidden-xs" src="/images/rss.png" alt="RSS">
+                    </a>
+                </li>
+                
+            </ul>
+            
+                <form class="navbar-form navbar-right" action="https://www.google.com/search" method="GET">
+                    <input type="hidden" name="sitesearch" value="bhrigu.me">
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="q" placeholder="Search">
+                    </div>
+                </form>
+            
+        </div>
+    </div>
+</nav>
+
+
+        </header>
+      
+      <div id="main" role="main" class="container">
+        <div id="content">
+          <div class="row">
+  <div class="page-content" itemscope itemtype="http://schema.org/Blog">
+    <meta itemprop="name" content="Bhrigu Srivastava" />
+    <meta itemprop="description" content="Personal website of Bhrigu Srivastava" />
+    <meta itemprop="url" content="http://bhrigu.me" />
+    <article class="hentry" role="article" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+      
+  <header class="page-header">
+    
+      <p class="meta text-muted text-uppercase">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2017-01-17T23:47:55+05:30"  data-updated="true" itemprop="datePublished dateCreated">Tue 17 Jan 2017, 11:47 PM</time>
+        
+      </p>
+    
+    
+    <h1 class="entry-title" itemprop="name headline">
+        Huffman Coding - Python Implementation
+        
+    </h1>
+    
+  </header>
+
+
+<div class="entry-content clearfix" itemprop="articleBody description"><p>Huffman Coding is one of the lossless data compression techniques. It assignes variable-length codes to the input characters, based on the frequencies of their occurence. The most frequent character is given the smallest length code. <br>
+(To read more: <a href="https://en.wikipedia.org/wiki/Huffman_coding">Huffman Coding</a>) <!-- more --></p>
+
+<center>
+    <img class="[erimg]" src="/images/huffman/huffman.png" title="HuffmanCoding" >
+</center>
+
+
+<p><br></p>
+
+<p>I thought of implementing the data compression program. The key things in the implementation were: <br></p>
+
+<ul>
+<li><p>Building frequency dictionary</p></li>
+<li><p>Select 2 minimum frequency symbols and merge them repeatedly: Used Min Heap</p></li>
+<li><p>Build a tree of the above process: Created a HeapNode class and used objects to maintain tree structure</p></li>
+<li><p>Assign code to characters: Recursively traversed the tree and assigned the corresponding codes</p></li>
+<li><p>Encode the input text. Added padding to the encoded text, if it&rsquo;s not of a length of multiple of 8. Stored this padding information, in 8 bits, in the beginning of the resultant code.</p></li>
+<li><p>Write the result to an output binary file, which will be our compressed file.</p></li>
+</ul>
+
+
+<h3 style="margin: 0;
+    font-weight: 600;
+    color: #888;">
+    End result</h3>
+
+
+<p>After running on a several sample text files, Compression Ratio on an average was achieved to be 2.1 : 1.</p>
+
+<p>So it&rsquo;s like you have your very own text file compression program.</p>
+
+<p>I implemented both the <em>compression</em> and <em>decompression</em> functions. Decompressing the compressed file brought back the original state of the file, without any data loss.</p>
+
+<p>Before you look at the code from beginning, first check out the outline of the 2 functions <strong>compress</strong> (line 101) and <strong>decompress</strong> (line 157) , and then look at details of the other functions called from them.</p>
+
+<table class="table">
+    <tr class="center">
+        <th>Compression <small style="font-weight: normal;"> (line 101)</small></th>
+        <th>Decompression <small style="font-weight: normal;"> (line 157)</small></th>
+    </tr>
+    <tr>
+        <td>
+            <ol>
+                <li>Make frequency dictionary</li>
+                <li>Make heap</li>
+                <li>Merge Nodes and build tree</li>
+                <li>Make codes</li>
+                <li>Encode Text</li>
+                <li>Pad encodded text</li>
+                <li>Make byte array</li>
+                <li>Output the byte array to binary file</li>
+            </ol>
+        </td>
+        <td>
+            <ol>
+                <li>Read binary file</li>
+                <li>Remove padding</li>
+                <li>Decode text</li>
+                <li>Output decoded text to txt file</li>
+            </ol>
+        </td>
+    </tr>
+</table>
+
+
+<p>The class <code>HuffmanCoding</code> takes complete path of the text file to be compressed as parameter. (as its data members store data specific to the input file).</p>
+
+<p>The <em>compress()</em> function returns the path of the output compressed file.</p>
+
+<p>The function <em>decompress()</em> requires path of the file to be decompressed. (and <em>decompress()</em> is to be called from the same object created for <em>compression</em>, so as to get code mapping from its data members)</p>
+
+<div><script src='https://gist.github.com/a0e50b1b468cff905346b451ab3a2c39.js?file=HuffmanCoding.py'></script>
+<noscript><pre><code>import heapq
+import os
+
+class HeapNode:
+    def __init__(self, char, freq):
+        self.char = char
+        self.freq = freq
+        self.left = None
+        self.right = None
+
+    def __cmp__(self, other):
+        if(other == None):
+            return -1
+        if(not isinstance(other, HeapNode)):
+            return -1
+        return self.freq &gt; other.freq
+
+
+class HuffmanCoding:
+    def __init__(self, path):
+        self.path = path
+        self.heap = []
+        self.codes = {}
+        self.reverse_mapping = {}
+
+    # functions for compression:
+
+    def make_frequency_dict(self, text):
+        frequency = {}
+        for character in text:
+            if not character in frequency:
+                frequency[character] = 0
+            frequency[character] += 1
+        return frequency
+
+    def make_heap(self, frequency):
+        for key in frequency:
+            node = HeapNode(key, frequency[key])
+            heapq.heappush(self.heap, node)
+
+    def merge_nodes(self):
+        while(len(self.heap)&gt;1):
+            node1 = heapq.heappop(self.heap)
+            node2 = heapq.heappop(self.heap)
+
+            merged = HeapNode(None, node1.freq + node2.freq)
+            merged.left = node1
+            merged.right = node2
+
+            heapq.heappush(self.heap, merged)
+
+
+    def make_codes_helper(self, root, current_code):
+        if(root == None):
+            return
+
+        if(root.char != None):
+            self.codes[root.char] = current_code
+            self.reverse_mapping[current_code] = root.char
+            return
+
+        self.make_codes_helper(root.left, current_code + &quot;0&quot;)
+        self.make_codes_helper(root.right, current_code + &quot;1&quot;)
+
+
+    def make_codes(self):
+        root = heapq.heappop(self.heap)
+        current_code = &quot;&quot;
+        self.make_codes_helper(root, current_code)
+
+
+    def get_encoded_text(self, text):
+        encoded_text = &quot;&quot;
+        for character in text:
+            encoded_text += self.codes[character]
+        return encoded_text
+
+
+    def pad_encoded_text(self, encoded_text):
+        extra_padding = 8 - len(encoded_text) % 8
+        for i in range(extra_padding):
+            encoded_text += &quot;0&quot;
+
+        padded_info = &quot;{0:08b}&quot;.format(extra_padding)
+        encoded_text = padded_info + encoded_text
+        return encoded_text
+
+
+    def get_byte_array(self, padded_encoded_text):
+        if(len(padded_encoded_text) % 8 != 0):
+            print(&quot;Encoded text not padded properly&quot;)
+            exit(0)
+
+        b = bytearray()
+        for i in range(0, len(padded_encoded_text), 8):
+            byte = padded_encoded_text[i:i+8]
+            b.append(int(byte, 2))
+        return b
+
+
+    def compress(self):
+        filename, file_extension = os.path.splitext(self.path)
+        output_path = filename + &quot;.bin&quot;
+
+        with open(self.path, &#39;r+&#39;) as file, open(output_path, &#39;wb&#39;) as output:
+            text = file.read()
+            text = text.rstrip()
+
+            frequency = self.make_frequency_dict(text)
+            self.make_heap(frequency)
+            self.merge_nodes()
+            self.make_codes()
+
+            encoded_text = self.get_encoded_text(text)
+            padded_encoded_text = self.pad_encoded_text(encoded_text)
+
+            b = self.get_byte_array(padded_encoded_text)
+            output.write(bytes(b))
+
+        print(&quot;Compressed&quot;)
+        return output_path
+
+
+    &quot;&quot;&quot; functions for decompression: &quot;&quot;&quot;
+
+    def text_to_binary(self, text):
+        encoded_text = &quot;&quot;
+        for character in text:
+            ascii = ord(character)
+            binary = &quot;{0:08b}&quot;.format(ascii)
+            encoded_text += binary
+        return encoded_text
+
+    def remove_padding(self, padded_encoded_text):
+        padded_info = padded_encoded_text[:8]
+        extra_padding = int(padded_info, 2)
+
+        padded_encoded_text = padded_encoded_text[8:] 
+        encoded_text = padded_encoded_text[:-1*extra_padding]
+
+        return encoded_text
+
+    def decode_text(self, encoded_text):
+        current_code = &quot;&quot;
+        decoded_text = &quot;&quot;
+
+        for bit in encoded_text:
+            current_code += bit
+            if(current_code in self.reverse_mapping):
+                character = self.reverse_mapping[current_code]
+                decoded_text += character
+                current_code = &quot;&quot;
+
+        return decoded_text
+
+
+    def decompress(self, input_path):
+        filename, file_extension = os.path.splitext(self.path)
+        output_path = filename + &quot;_decompressed&quot; + &quot;.txt&quot;
+
+        with open(input_path, &#39;rb&#39;) as file, open(output_path, &#39;w&#39;) as output:
+            bit_string = &quot;&quot;
+
+            byte = file.read(1)
+            while(byte != &quot;&quot;):
+                byte = ord(byte)
+                bits = bin(byte)[2:].rjust(8, &#39;0&#39;)
+                bit_string += bits
+                byte = file.read(1)
+
+            encoded_text = self.remove_padding(bit_string)
+
+            decompressed_text = self.decode_text(encoded_text)
+            
+            output.write(decompressed_text)
+
+        print(&quot;Decompressed&quot;)
+        return output_path
+
+</code></pre></noscript></div>
+
+
+
+
+<h3 style="margin: 0;
+    font-weight: 600;
+    color: #888;">
+    Running the program:</h3>
+
+
+<p>Save the above code.</p>
+
+<p>Create a sample text file. Or download a sample file from <a href="https://raw.githubusercontent.com/bhrigu123/huffman-coding/master/sample.txt">sample.txt</a> (right click, save as)</p>
+
+<p>Save the code below, in the same directory as the above code, and Run this python code (edit the <code>path</code> variable below before running. initialize it to text file path)</p>
+
+<figure class='code'><figcaption><span>UseHuffman.py</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="kn">from</span> <span class="nn">huffman</span> <span class="kn">import</span> <span class="n">HuffmanCoding</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">#input file path</span>
+</span><span class='line'><span class="n">path</span> <span class="o">=</span> <span class="s">&quot;/home/ubuntu/Downloads/sample.txt&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">h</span> <span class="o">=</span> <span class="n">HuffmanCoding</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">output_path</span> <span class="o">=</span> <span class="n">h</span><span class="o">.</span><span class="n">compress</span><span class="p">()</span>
+</span><span class='line'><span class="n">h</span><span class="o">.</span><span class="n">decompress</span><span class="p">(</span><span class="n">output_path</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The compressed <code>.bin</code> file and the decompressed file are both saved in the same directory as of the input file.</p>
+
+<h3 style="margin: 0;
+    font-weight: 600;
+    color: #888;">
+    Result</h3>
+
+
+<p>On running on the above linked sample text file:</p>
+
+<table class="table">
+    <tr>
+        <td><b>Initial Size:</b></td>
+        <td>715.3 kB</td>
+    </tr>
+    <tr>
+        <td><b>Compressed file Size:</b></td>
+        <td>394.0 kB</td>
+    </tr>
+</table>
+
+
+<p>Plus, the decompressed file comes out to be exactly the same as the original file, without any data loss.</p>
+
+<p>And that is all for Huffman Coding implementation, with compression and decompression. This was fun to code.</p>
+</div>
+
+
+      <footer>
+        <p class="meta text-muted">
+          
+  
+
+<span class="glyphicon glyphicon-user"></span> <span class="byline author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person">Posted by <span class="fn" itemprop="name">Bhrigu Srivastava</span></span>
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2017-01-17T23:47:55+05:30"  data-updated="true" itemprop="datePublished dateCreated">Tue 17 Jan 2017, 11:47 PM</time>
+          
+
+<span class="glyphicon glyphicon-tags"></span>&nbsp;
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/code/'>code</a>, <a class='category' href='/blog/categories/python/'>python,</a>
+  
+</span>
+
+
+        </p>
+        
+          <div class="sharing">
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+        
+        
+          <ul class="meta text-muted pager">
+            
+            <li class="previous"><a href="/blog/2016/12/29/2016-my-year-in-review/" title="Previous Post: 2016 - My Year in Review">&laquo; 2016 - My Year in Review</a></li>
+            
+            
+          </ul>
+        
+      </footer>
+    </article>
+    
+      <section>
+        <h2>Comments</h2>
+        <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+      </section>
+    
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    <footer role="contentinfo"><div class="container">
+    <p class="text-muted credits">
+  Copyright &copy; 2017 - Bhrigu Srivastava<br>
+  <small>
+      <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>,
+      <span class="credit">customized with <a href="https://github.com/kAworu/octostrap3">octostrap3</a></span>.
+  </small>
+</p>
+
+</div>
+</footer>
+    
+
+<script type="text/javascript">
+      var disqus_shortname = 'bhrigu';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://bhrigu.me/blog/2017/01/17/huffman-coding-python-implementation/';
+        var disqus_url = 'http://bhrigu.me/blog/2017/01/17/huffman-coding-python-implementation/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+
+<script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/javascripts/modernizr.js"></script>
+
+
+  </body>
+</html>

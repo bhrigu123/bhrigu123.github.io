@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Code | Bhrigu Srivastava]]></title>
+  <link href="http://bhrigu.me/blog/categories/code/atom.xml" rel="self"/>
+  <link href="http://bhrigu.me/"/>
+  <updated>2017-01-18T19:17:59+05:30</updated>
+  <id>http://bhrigu.me/</id>
+  <author>
+    <name><![CDATA[Bhrigu Srivastava]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Huffman Coding - Python Implementation]]></title>
+    <link href="http://bhrigu.me/blog/2017/01/17/huffman-coding-python-implementation/"/>
+    <updated>2017-01-17T23:47:55+05:30</updated>
+    <id>http://bhrigu.me/blog/2017/01/17/huffman-coding-python-implementation</id>
+    <content type="html"><![CDATA[<p>Huffman Coding is one of the lossless data compression techniques. It assignes variable-length codes to the input characters, based on the frequencies of their occurence. The most frequent character is given the smallest length code. <br>
+(To read more: <a href="https://en.wikipedia.org/wiki/Huffman_coding">Huffman Coding</a>) <!-- more --></p>
+
+<center>
+    <img class="[erimg]" src="/images/huffman/huffman.png" title="HuffmanCoding" >
+</center>
+
+
+<p><br></p>
+
+<p>I thought of implementing the data compression program. The key things in the implementation were: <br></p>
+
+<ul>
+<li><p>Building frequency dictionary</p></li>
+<li><p>Select 2 minimum frequency symbols and merge them repeatedly: Used Min Heap</p></li>
+<li><p>Build a tree of the above process: Created a HeapNode class and used objects to maintain tree structure</p></li>
+<li><p>Assign code to characters: Recursively traversed the tree and assigned the corresponding codes</p></li>
+<li><p>Encode the input text. Added padding to the encoded text, if it&rsquo;s not of a length of multiple of 8. Stored this padding information, in 8 bits, in the beginning of the resultant code.</p></li>
+<li><p>Write the result to an output binary file, which will be our compressed file.</p></li>
+</ul>
+
+
+<h3 style="margin: 0;
+    font-weight: 600;
+    color: #888;">
+    End result</h3>
+
+
+<p>After running on a several sample text files, Compression Ratio on an average was achieved to be 2.1 : 1.</p>
+
+<p>So it&rsquo;s like you have your very own text file compression program.</p>
+
+<p>I implemented both the <em>compression</em> and <em>decompression</em> functions. Decompressing the compressed file brought back the original state of the file, without any data loss.</p>
+
+<p>Before you look at the code from beginning, first check out the outline of the 2 functions <strong>compress</strong> (line 101) and <strong>decompress</strong> (line 157) , and then look at details of the other functions called from them.</p>
+
+<table class="table">
+    <tr class="center">
+        <th>Compression <small style="font-weight: normal;"> (line 101)</small></th>
+        <th>Decompression <small style="font-weight: normal;"> (line 157)</small></th>
+    </tr>
+    <tr>
+        <td>
+            <ol>
+                <li>Make frequency dictionary</li>
+                <li>Make heap</li>
+                <li>Merge Nodes and build tree</li>
+                <li>Make codes</li>
+                <li>Encode Text</li>
+                <li>Pad encodded text</li>
+                <li>Make byte array</li>
+                <li>Output the byte array to binary file</li>
+            </ol>
+        </td>
+        <td>
+            <ol>
+                <li>Read binary file</li>
+                <li>Remove padding</li>
+                <li>Decode text</li>
+                <li>Output decoded text to txt file</li>
+            </ol>
+        </td>
+    </tr>
+</table>
+
+
+<p>The class <code>HuffmanCoding</code> takes complete path of the text file to be compressed as parameter. (as its data members store data specific to the input file).</p>
+
+<p>The <em>compress()</em> function returns the path of the output compressed file.</p>
+
+<p>The function <em>decompress()</em> requires path of the file to be decompressed. (and <em>decompress()</em> is to be called from the same object created for <em>compression</em>, so as to get code mapping from its data members)</p>
+
+<p><div><script src='https://gist.github.com/a0e50b1b468cff905346b451ab3a2c39.js?file=HuffmanCoding.py'></script>
+<noscript><pre><code>import heapq
+import os
+
+class HeapNode:
+	def __init__(self, char, freq):
+		self.char = char
+		self.freq = freq
+		self.left = None
+		self.right = None
+
+	def __cmp__(self, other):
+		if(other == None):
+			return -1
+		if(not isinstance(other, HeapNode)):
+			return -1
+		return self.freq &gt; other.freq
+
+
+class HuffmanCoding:
+	def __init__(self, path):
+		self.path = path
+		self.heap = []
+		self.codes = {}
+		self.reverse_mapping = {}
+
+	# functions for compression:
+
+	def make_frequency_dict(self, text):
+		frequency = {}
+		for character in text:
+			if not character in frequency:
+				frequency[character] = 0
+			frequency[character] += 1
+		return frequency
+
+	def make_heap(self, frequency):
+		for key in frequency:
+			node = HeapNode(key, frequency[key])
+			heapq.heappush(self.heap, node)
+
+	def merge_nodes(self):
+		while(len(self.heap)&gt;1):
+			node1 = heapq.heappop(self.heap)
+			node2 = heapq.heappop(self.heap)
+
+			merged = HeapNode(None, node1.freq + node2.freq)
+			merged.left = node1
+			merged.right = node2
+
+			heapq.heappush(self.heap, merged)
+
+
+	def make_codes_helper(self, root, current_code):
+		if(root == None):
+			return
+
+		if(root.char != None):
+			self.codes[root.char] = current_code
+			self.reverse_mapping[current_code] = root.char
+			return
+
+		self.make_codes_helper(root.left, current_code + &quot;0&quot;)
+		self.make_codes_helper(root.right, current_code + &quot;1&quot;)
+
+
+	def make_codes(self):
+		root = heapq.heappop(self.heap)
+		current_code = &quot;&quot;
+		self.make_codes_helper(root, current_code)
+
+
+	def get_encoded_text(self, text):
+		encoded_text = &quot;&quot;
+		for character in text:
+			encoded_text += self.codes[character]
+		return encoded_text
+
+
+	def pad_encoded_text(self, encoded_text):
+		extra_padding = 8 - len(encoded_text) % 8
+		for i in range(extra_padding):
+			encoded_text += &quot;0&quot;
+
+		padded_info = &quot;{0:08b}&quot;.format(extra_padding)
+		encoded_text = padded_info + encoded_text
+		return encoded_text
+
+
+	def get_byte_array(self, padded_encoded_text):
+		if(len(padded_encoded_text) % 8 != 0):
+			print(&quot;Encoded text not padded properly&quot;)
+			exit(0)
+
+		b = bytearray()
+		for i in range(0, len(padded_encoded_text), 8):
+			byte = padded_encoded_text[i:i+8]
+			b.append(int(byte, 2))
+		return b
+
+
+	def compress(self):
+		filename, file_extension = os.path.splitext(self.path)
+		output_path = filename + &quot;.bin&quot;
+
+		with open(self.path, &#39;r+&#39;) as file, open(output_path, &#39;wb&#39;) as output:
+			text = file.read()
+			text = text.rstrip()
+
+			frequency = self.make_frequency_dict(text)
+			self.make_heap(frequency)
+			self.merge_nodes()
+			self.make_codes()
+
+			encoded_text = self.get_encoded_text(text)
+			padded_encoded_text = self.pad_encoded_text(encoded_text)
+
+			b = self.get_byte_array(padded_encoded_text)
+			output.write(bytes(b))
+
+		print(&quot;Compressed&quot;)
+		return output_path
+
+
+	&quot;&quot;&quot; functions for decompression: &quot;&quot;&quot;
+
+	def text_to_binary(self, text):
+		encoded_text = &quot;&quot;
+		for character in text:
+			ascii = ord(character)
+			binary = &quot;{0:08b}&quot;.format(ascii)
+			encoded_text += binary
+		return encoded_text
+
+	def remove_padding(self, padded_encoded_text):
+		padded_info = padded_encoded_text[:8]
+		extra_padding = int(padded_info, 2)
+
+		padded_encoded_text = padded_encoded_text[8:] 
+		encoded_text = padded_encoded_text[:-1*extra_padding]
+
+		return encoded_text
+
+	def decode_text(self, encoded_text):
+		current_code = &quot;&quot;
+		decoded_text = &quot;&quot;
+
+		for bit in encoded_text:
+			current_code += bit
+			if(current_code in self.reverse_mapping):
+				character = self.reverse_mapping[current_code]
+				decoded_text += character
+				current_code = &quot;&quot;
+
+		return decoded_text
+
+
+	def decompress(self, input_path):
+		filename, file_extension = os.path.splitext(self.path)
+		output_path = filename + &quot;_decompressed&quot; + &quot;.txt&quot;
+
+		with open(input_path, &#39;rb&#39;) as file, open(output_path, &#39;w&#39;) as output:
+			bit_string = &quot;&quot;
+
+			byte = file.read(1)
+			while(byte != &quot;&quot;):
+				byte = ord(byte)
+				bits = bin(byte)[2:].rjust(8, &#39;0&#39;)
+				bit_string += bits
+				byte = file.read(1)
+
+			encoded_text = self.remove_padding(bit_string)
+
+			decompressed_text = self.decode_text(encoded_text)
+			
+			output.write(decompressed_text)
+
+		print(&quot;Decompressed&quot;)
+		return output_path
+
+</code></pre></noscript></div>
+</p>
+
+<h3 style="margin: 0;
+    font-weight: 600;
+    color: #888;">
+    Running the program:</h3>
+
+
+<p>Save the above code.</p>
+
+<p>Create a sample text file. Or download a sample file from <a href="https://raw.githubusercontent.com/bhrigu123/huffman-coding/master/sample.txt">sample.txt</a> (right click, save as)</p>
+
+<p>Save the code below, in the same directory as the above code, and Run this python code (edit the <code>path</code> variable below before running. initialize it to text file path)</p>
+
+<pre><code class="python UseHuffman.py">from huffman import HuffmanCoding
+
+#input file path
+path = "/home/ubuntu/Downloads/sample.txt"
+
+h = HuffmanCoding(path)
+
+output_path = h.compress()
+h.decompress(output_path)
+</code></pre>
+
+<p>The compressed <code>.bin</code> file and the decompressed file are both saved in the same directory as of the input file.</p>
+
+<h3 style="margin: 0;
+    font-weight: 600;
+    color: #888;">
+    Result</h3>
+
+
+<p>On running on the above linked sample text file:</p>
+
+<table class="table">
+    <tr>
+        <td><b>Initial Size:</b></td>
+        <td>715.3 kB</td>
+    </tr>
+    <tr>
+        <td><b>Compressed file Size:</b></td>
+        <td>394.0 kB</td>
+    </tr>
+</table>
+
+
+<p>Plus, the decompressed file comes out to be exactly the same as the original file, without any data loss.</p>
+
+<p>And that is all for Huffman Coding implementation, with compression and decompression. This was fun to code.</p>
+]]></content>
+  </entry>
+  
+</feed>
