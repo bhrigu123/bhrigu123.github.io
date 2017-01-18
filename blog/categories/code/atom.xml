@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Code | Bhrigu Srivastava]]></title>
   <link href="http://bhrigu.me/blog/categories/code/atom.xml" rel="self"/>
   <link href="http://bhrigu.me/"/>
-  <updated>2017-01-18T19:17:59+05:30</updated>
+  <updated>2017-01-18T19:39:48+05:30</updated>
   <id>http://bhrigu.me/</id>
   <author>
     <name><![CDATA[Bhrigu Srivastava]]></name>
@@ -321,6 +321,11 @@ h.decompress(output_path)
 <p>Plus, the decompressed file comes out to be exactly the same as the original file, without any data loss.</p>
 
 <p>And that is all for Huffman Coding implementation, with compression and decompression. This was fun to code.</p>
+
+<p><button type="button" class="btn btn-default">
+    <a href="https://github.com/bhrigu123/huffman-coding" target="_blank">
+    View on GitHub</a>
+</button></p>
 ]]></content>
   </entry>
   
