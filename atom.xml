@@ -4,7 +4,7 @@
   <title><![CDATA[Bhrigu Srivastava]]></title>
   <link href="http://bhrigu.me/atom.xml" rel="self"/>
   <link href="http://bhrigu.me/"/>
-  <updated>2017-01-18T19:39:48+05:30</updated>
+  <updated>2017-01-18T19:58:18+05:30</updated>
   <id>http://bhrigu.me/</id>
   <author>
     <name><![CDATA[Bhrigu Srivastava]]></name>
@@ -18,7 +18,7 @@
     <link href="http://bhrigu.me/blog/2017/01/17/huffman-coding-python-implementation/"/>
     <updated>2017-01-17T23:47:55+05:30</updated>
     <id>http://bhrigu.me/blog/2017/01/17/huffman-coding-python-implementation</id>
-    <content type="html"><![CDATA[<p>Huffman Coding is one of the lossless data compression techniques. It assignes variable-length codes to the input characters, based on the frequencies of their occurence. The most frequent character is given the smallest length code. <br>
+    <content type="html"><![CDATA[<p>Huffman Coding is one of the lossless data compression techniques. It assigns variable-length codes to the input characters, based on the frequencies of their occurence. The most frequent character is given the smallest length code. <br>
 (To read more: <a href="https://en.wikipedia.org/wiki/Huffman_coding">Huffman Coding</a>) <!-- more --></p>
 
 <center>
