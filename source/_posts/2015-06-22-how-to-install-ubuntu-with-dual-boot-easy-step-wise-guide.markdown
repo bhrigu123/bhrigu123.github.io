@@ -3,7 +3,7 @@ layout: post
 title: "How to install Ubuntu with dual boot (Easy step-wise guide)"
 date: 2015-06-22 14:30:32 +0530
 comments: true
-categories: 
+categories: Ubuntu
 ---
 Here is the easy step-wise installation guide to install Ubuntu along side with your Windows (dual boot)
 

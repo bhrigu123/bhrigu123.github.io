@@ -3,7 +3,7 @@ layout: post
 title: "Starting Django project"
 date: 2015-07-06 09:25:47 +0530
 comments: true
-categories: 
+categories: Django
 ---
 `django-admin.py startproject newproj`<br>
 I had learnt the django framework basics quite a while ago, but never worked on or made a complete functional project.<br>

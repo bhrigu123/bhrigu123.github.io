@@ -3,7 +3,7 @@ layout: post
 title: "A Song of Ice and Fire: analysis"
 date: 2016-04-17 13:55:38 +0530
 comments: true
-categories: 
+categories: Books
 ---
 "Game of Thrones" is almost on every lips of the people you come across. You yourself might be an ardent follower of the hit HBO TV series. But what you might not be aware of is the genius put behind in building up this epic fantasy series, by none other than the author himself of A song of ice and fire books: George RR Martin. <!--more-->
 

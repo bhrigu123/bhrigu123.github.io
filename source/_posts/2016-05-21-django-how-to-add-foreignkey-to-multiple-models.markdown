@@ -4,7 +4,7 @@ title: "Django: How to add ForeignKey to multiple models"
 date: 2016-05-21 01:28:37 +0530
 comments: true
 sidebar: false
-categories: django
+categories: Django
 ---
 Basically, how to make relation to more than one type of model, using one ForeignKey. (using *contenttypes* app and *Generic Relations*)
 

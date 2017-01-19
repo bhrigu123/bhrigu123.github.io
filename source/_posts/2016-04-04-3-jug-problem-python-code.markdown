@@ -3,7 +3,7 @@ layout: post
 title: "3 Jug Problem - Python Code"
 date: 2016-04-04 23:36:57 +0530
 comments: true
-categories: 
+categories: Python
 ---
 I came across this image by a Facebook page ([Curiosity](https://www.facebook.com/curiositydotcom/)), which asked a solution to the famous Water Jug problem, involving 3 jugs.
 <center>
