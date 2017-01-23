@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Code, | Bhrigu Srivastava]]></title>
-  <link href="http://bhrigu.me/blog/categories/code/atom.xml" rel="self"/>
+  <title><![CDATA[Category: C++ | Bhrigu Srivastava]]></title>
+  <link href="http://bhrigu.me/blog/categories/c-plus-plus/atom.xml" rel="self"/>
   <link href="http://bhrigu.me/"/>
   <updated>2017-01-23T19:13:54+05:30</updated>
   <id>http://bhrigu.me/</id>
