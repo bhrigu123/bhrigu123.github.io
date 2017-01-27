@@ -6,8 +6,7 @@ comments: true
 categories: Python, Code
 ---
 
-Huffman Coding is one of the lossless data compression techniques. It assigns variable-length codes to the input characters, based on the frequencies of their occurence. The most frequent character is given the smallest length code. <br>
-(To read more: [Huffman Coding](https://en.wikipedia.org/wiki/Huffman_coding)) <!-- more -->
+[Huffman Coding](https://en.wikipedia.org/wiki/Huffman_coding) is one of the lossless data compression techniques. It assigns variable-length codes to the input characters, based on the frequencies of their occurence. The most frequent character is given the smallest length code. <br> <!-- more -->
 
 <center>
 	{% img [erimg] /images/huffman/huffman.png HuffmanCoding %}

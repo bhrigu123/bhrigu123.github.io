@@ -83,7 +83,7 @@ h1,h2,h3{
 }
 
 .layer {
-    background-color: rgba(93, 93, 90, 0.5);
+    background-color: rgba(60, 60, 58, 0.5);
     position: absolute;
     top: 0;
     left: 0;
@@ -99,11 +99,24 @@ h1,h2,h3{
   line-height: 1.5;
   font-weight: 100;
 }
+
 .page-links a{
   font-size: 2.2rem;
   line-height: 1.5;
   color: white;
   text-decoration: none;
+  padding: 15px 15px 15px 15px;
+}
+.page-links a:hover {
+  background-color: rgba(128, 128, 128, 0.3);
+}
+.index-nav {
+  list-style: none;
+  padding: 0;
+}
+.index-nav>li {
+  display: inline-block;
+  float: none;
 }
 
 
