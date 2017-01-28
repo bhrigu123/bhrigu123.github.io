@@ -4,7 +4,7 @@ title: "LRU Cache - C++ Implementation"
 date: 2017-01-22 23:50:26 +0530
 comments: true
 description: "LRU (Least Recently Used) algorithm implementation and explanation in C++"
-categories: code, c++
+categories: [code, c++]
 ---
 
 LRU, or *Least Recetly Used*, is one of the [Page Replacement Algorithms](https://en.wikipedia.org/wiki/Page_replacement_algorithm), in which the system manages a given amount of memory - by making decisions what pages to keep in memory, and which ones to remove when the memory is full.  <!-- more -->

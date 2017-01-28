@@ -2,6 +2,7 @@
 layout: post
 title: "Hyderabad Times | Amazon Internship"
 date: 2016-10-12 11:38:45 +0530
+description: My internship experience at Hyderabad
 comments: true
 categories: 
 ---

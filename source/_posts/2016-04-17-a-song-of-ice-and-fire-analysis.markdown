@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "A Song of Ice and Fire: analysis"
+description: My analysis of the A Song of Ice and Fire book series
 date: 2016-04-17 13:55:38 +0530
 comments: true
 categories: Books

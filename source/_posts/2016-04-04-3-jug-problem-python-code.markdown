@@ -2,6 +2,7 @@
 layout: post
 title: "3 Jug Problem - Python Code"
 date: 2016-04-04 23:36:57 +0530
+description: Python implementation of 3 jug water problem
 comments: true
 categories: Python
 ---

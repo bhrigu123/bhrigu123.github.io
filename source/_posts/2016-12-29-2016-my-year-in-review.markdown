@@ -2,6 +2,7 @@
 layout: post
 title: "2016 - My Year in Review"
 date: 2016-12-29 20:05:40 +0530
+description: A highlight of events of my life in 2016
 comments: true
 categories: 
 ---

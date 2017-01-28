@@ -2,6 +2,7 @@
 layout: post
 title: "Django: How to add ForeignKey to multiple models"
 date: 2016-05-21 01:28:37 +0530
+description: Tutorial with example to show how to add foreign key from a model to multiple models
 comments: true
 sidebar: false
 categories: Django

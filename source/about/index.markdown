@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "About Me"
+description: About Bhrigu Srivastava. My intro, experience, interests, work and contact.
 comments: false
 sharing: false
 footer: true

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Projects"
+description: Projects page of Bhrigu Srivastava. Websites and libraries developed by me.
 comments: false
 sharing: true
 footer: true

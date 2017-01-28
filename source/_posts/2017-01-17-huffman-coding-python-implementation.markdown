@@ -2,8 +2,9 @@
 layout: post
 title: "Huffman Coding - Python Implementation"
 date: 2017-01-17 23:47:55 +0530
+description: Python implementation of Huffman Coding, with working compression and decompression functions
 comments: true
-categories: Python, Code
+categories: [Python, Code]
 ---
 
 [Huffman Coding](https://en.wikipedia.org/wiki/Huffman_coding) is one of the lossless data compression techniques. It assigns variable-length codes to the input characters, based on the frequencies of their occurence. The most frequent character is given the smallest length code. <br> <!-- more -->
