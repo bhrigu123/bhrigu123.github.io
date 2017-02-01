@@ -12,6 +12,20 @@ sidebar: false
 <script src="https://use.fontawesome.com/fc562a49dd.js"></script>
 
 <div class="article">
+	<style type="text/css">
+		.work-details {
+		  padding: 10px;
+		}
+		.work-details div {
+		  padding: 0;
+		}
+		#work h3 {
+		  margin: 0;
+		  font-weight: 600;
+		  color: #888;
+		}
+	</style>
+
 	<div class="">
 		<p>Hey! I am Bhrigu Srivastava.</p>
 		<section id="about">
@@ -30,8 +44,8 @@ sidebar: false
 			
 			<p>Quick links:</p>
 			<div class="links-list" role="group">
-		  		<li><a href="projects">Projects</a></li>
-		  		<li><a href="resume.pdf" target="_blank">Resume</a></li>
+		  		<li><a href="/projects">Projects</a></li>
+		  		<li><a href="/resume.pdf" target="_blank">Resume</a></li>
 		  		<li><a href="/">Blog / Home</a></li>
 			</div>
 		</section>

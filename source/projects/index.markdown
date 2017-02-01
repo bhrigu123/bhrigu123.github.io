@@ -8,10 +8,24 @@ footer: true
 navbar: Projects
 sidebar: true
 ---
+
+
+
 <div class="article">
+	<style type="text/css">
+	  .project-link a {
+	    color: #777 !important;
+	  }
+	</style>
 	<div class="">
 			<div>
-				<p><a href="http://jeequery.com>" target="_blank"><h3 class="">JEEQuery</h3></a></p>
+				<h3>
+					<a href="http://jeequery.com>" target="_blank">JEEQuery</a>
+				</h3>
+				<div class="project-link text-muted"><i class="fa fa-link" aria-hidden="true"></i> <a href="http://jeequery.com" target="_blank">http://jeequery.com</a></div>
+				<br>
+				
+
 				<p>A Q&A platform for students preparing for IIT-JEE and other engineering entrance exams.</p>
 				<p>Built with Django framework and bootstrap, and deployed on AWS EC2 server</p>
 				<div class="text-center">
@@ -22,7 +36,12 @@ sidebar: true
 			</div>
 			<hr>
 			<div>
-				<p><a href="http://dtumart.com" target="_blank"><h3>DTU Mart</h3></a></p>
+				<h3>
+					<a href="http://dtumart.com" target="_blank"><h3>DTU Mart</h3></a>
+				</h3>
+				<div class="project-link text-muted"><i class="fa fa-link" aria-hidden="true"></i> <a href="http://dtumart.com" target="_blank">http://dtumart.com</a></div>
+				<br>
+				
 				<p>
 					An online portal for my college (DTU) for students to buy, sell, exchange books and materials with each other.
 				</p>
@@ -35,7 +54,12 @@ sidebar: true
 			</div>
 			<hr>
 			<div>
-				<p><a href="http://bhrigu123.github.io/classifier" target="_blank"><h3>Classifier</h3></a></p>
+				<h3>
+					<a href="https://github.com/bhrigu123/classifier" target="_blank"><h3>Classifier</h3></a>
+				</h3>
+				<div class="project-link text-muted"><i class="fa fa-link" aria-hidden="true"></i> <a href="https://github.com/bhrigu123/classifier" target="_blank">https://github.com/bhrigu123/classifier</a></div>
+				<br>
+
 				<p>
 				A python module that organizes files in your directories, by classifying them into folders of music, pdfs, images, etc.</p>
 				<p>Received over 600+ stars on the GitHub repo</p>
