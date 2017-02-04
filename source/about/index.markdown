@@ -46,6 +46,7 @@ sidebar: false
 			<div class="links-list" role="group">
 		  		<li><a href="/projects">Projects</a></li>
 		  		<li><a href="/resume.pdf" target="_blank">Resume</a></li>
+		  		<li><a href="/music">Guitar / Music</a></li>
 		  		<li><a href="/">Blog / Home</a></li>
 			</div>
 		</section>
@@ -53,22 +54,22 @@ sidebar: false
 		<section id="interests">
 			<h1>Interests</h1>
 			<div class="row text-center">
-				<div class="col-md-3 col-xs-6">
+				<a class="col-md-3 col-xs-6" href="/cycling">
 					<i class="fa fa-3x fa-bicycle" aria-hidden="true"></i><br>
 					Bicycling
-				</div>
-				<div class="col-md-3 col-xs-6">
-					<a href="https://www.goodreads.com/user/show/48875122-bhrigu-srivastava"><i class="fa fa-3x fa-book" aria-hidden="true"></i></a><br>
+				</a>
+				<a class="col-md-3 col-xs-6" href="https://www.goodreads.com/user/show/48875122-bhrigu-srivastava">
+					<i class="fa fa-3x fa-book" aria-hidden="true"></i><br>
 					Reading
-				</div>
-				<div class="col-md-3 col-xs-6">
+				</a>
+				<a class="col-md-3 col-xs-6" href="/music">
 					<i class="fa fa-3x fa-music" aria-hidden="true"></i><br>
 					Guitar
-				</div>
-				<div class="col-md-3 col-xs-6">
+				</a>
+				<a class="col-md-3 col-xs-6">
 					<i class="fa fa-3x fa-futbol-o" aria-hidden="true"></i><br>
 					Football
-				</div>
+				</a>
 			</div>
 			<br>
 
