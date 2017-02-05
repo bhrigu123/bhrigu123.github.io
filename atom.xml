@@ -4,7 +4,7 @@
   <title><![CDATA[Bhrigu Srivastava]]></title>
   <link href="http://bhrigu.me/atom.xml" rel="self"/>
   <link href="http://bhrigu.me/"/>
-  <updated>2017-02-04T19:40:14+05:30</updated>
+  <updated>2017-02-05T17:01:08+05:30</updated>
   <id>http://bhrigu.me/</id>
   <author>
     <name><![CDATA[Bhrigu Srivastava]]></name>
@@ -12,6 +12,47 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[My Own Octopress Theme and Other Blog Updates]]></title>
+    <link href="http://bhrigu.me/blog/2017/02/05/my-own-octopress-theme-and-other-blog-updates/"/>
+    <updated>2017-02-05T16:23:23+05:30</updated>
+    <id>http://bhrigu.me/blog/2017/02/05/my-own-octopress-theme-and-other-blog-updates</id>
+    <content type="html"><![CDATA[<p>Recently, I have been doing a lot of changes in my blog&rsquo;s layout and pages, to incorporate better readability, good looking pages and make it less cramped. <!-- more --></p>
+
+<p>Mid-way I realised that it would be nice if I also made my theme available for use to other octopress bloggers. So instead of doing changes to my own site, I started working on creating a theme module, which any octopress user can install on his/her site instantly.</p>
+
+<p>Customizing and installing themes in Octopress is really simple.</p>
+
+<p>Earlier I was using a 3rd party theme called <a href="https://github.com/kAworu/octostrap3">octostrap3</a>, and I had done a lot of modifications in it to suit my needs.</p>
+
+<p>The final result ended up in a much different (and better) looking theme which I compiled to create my own theme module, and called it <em><strong>Abacus</strong></em>.</p>
+
+<p>I chose the name <em>Abacus</em> such that my theme appears on the top in the list of <a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">3rd party Octopress themes</a>, where they are arranged in alphabetical order. Plus it sounds cool.</p>
+
+<p>The theme is available at: <a href="https://github.com/bhrigu123/abacus">Abacus</a>.</p>
+
+<p>I had also done several other changes to my own site and created some more pages like:</p>
+
+<ul>
+    <li><a href="http://bhrigu.me/about">About Me</a></li>
+    <li><a href="http://bhrigu.me/music">Music</a>: Few of my guitar covers</li>
+</ul>
+
+
+<p>Here are 2 screenshots of the Abacus theme (in case I&rsquo;m using some other theme in the future):</p>
+
+<h4>Banner</h4>
+
+<p><img src="http://bhrigu.me/images/theme/theme1.png" alt="banner" /></p>
+
+<h4>Author</h4>
+
+<p><img src="http://bhrigu.me/images/theme/theme2.png" alt="author" /></p>
+
+<p>Well&hellip;that&rsquo;s all for this post.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[LRU Cache - C++ Implementation]]></title>
