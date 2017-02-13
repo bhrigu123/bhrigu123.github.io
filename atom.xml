@@ -4,7 +4,7 @@
   <title><![CDATA[Bhrigu Srivastava]]></title>
   <link href="http://bhrigu.me/atom.xml" rel="self"/>
   <link href="http://bhrigu.me/"/>
-  <updated>2017-02-08T21:58:09+05:30</updated>
+  <updated>2017-02-13T21:12:34+05:30</updated>
   <id>http://bhrigu.me/</id>
   <author>
     <name><![CDATA[Bhrigu Srivastava]]></name>
@@ -1408,11 +1408,9 @@ I had so much to talk about the books, and it&rsquo;s probably best if my keep m
 
 <p><strong>Problem</strong>: Given 3 jugs of capacites: 12, 8 and 5 litres. Our 12 L jug is completely filled. Using these 3 jugs split the water to obtain exactly 6 Litres.</p>
 
-<p>So I thought, instead of going hit and trial to find a solution, why not write a Python code and feel awesome about it.</p>
+<p>So I thought of writing a code in python to obtain the solution to the problem, instead of doing hit and trial.</p>
 
-<p>Because Why Not?</p>
-
-<p>So I used DFS to search through all the states of the jugs. At each state, we&rsquo;ll have certain choices of emptying water from one jug into another. We&rsquo;ll try each choice, calling our function for each state, and if we reach the goal state, we stop.</p>
+<p>I used DFS to search through all the states of the jugs. At each state, we&rsquo;ll have certain choices of emptying water from one jug into another. We&rsquo;ll try each choice, calling our function for each state, and if we reach the goal state, we stop.</p>
 
 <p>[<em>Note that the given program could be made smaller/modular, but it is more understandable given this way. Also, DFS might not give an optimal (best path) solution. For that use BFS</em>]</p>
 
