@@ -2,6 +2,7 @@
 layout: post
 title: "How to install Ubuntu with dual boot (Easy step-wise guide)"
 date: 2015-06-22 14:30:32 +0530
+updated: 2015-06-22 14:30:32 +0530
 description: Step wise guide to Ububtu installation with dual boot.
 comments: true
 categories: Ubuntu

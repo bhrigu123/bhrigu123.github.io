@@ -2,6 +2,7 @@
 layout: post
 title: "Starting Django project"
 date: 2015-07-06 09:25:47 +0530
+updated: 2015-07-06 09:25:47 +0530
 description: I'm starting a new django project
 comments: true
 categories: Django

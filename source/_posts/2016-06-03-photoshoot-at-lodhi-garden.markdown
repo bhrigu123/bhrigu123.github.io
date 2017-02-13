@@ -2,7 +2,8 @@
 layout: post
 title: "Photoshoot @ Lodhi Garden"
 date: 2016-06-03 14:21:24 +0530
-description: My stroll through the Lodhi Garden
+updated: 2016-06-03 14:21:24 +0530
+description: "My stroll through the Lodhi Garden"
 comments: false
 categories: photography 
 ---

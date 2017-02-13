@@ -2,6 +2,7 @@
 layout: post
 title: "Huffman Coding - Python Implementation"
 date: 2017-01-17 23:47:55 +0530
+updated: 2017-01-17 23:47:55 +0530
 description: Python implementation of Huffman Coding, with working compression and decompression functions
 comments: true
 categories: [Python, Code]

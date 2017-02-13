@@ -2,7 +2,8 @@
 layout: post
 title: "3 Jug Problem - Python Code"
 date: 2016-04-04 23:36:57 +0530
-description: Python implementation of 3 jug water problem
+updated: 2017-02-13 19:57:57 +0530
+description: Python implementation of 3 jug water problem. Solution explanation and code, written in Python and using Depth First Search (DFS).
 comments: true
 categories: Python
 ---
@@ -13,11 +14,10 @@ I came across this image by a Facebook page ([Curiosity](https://www.facebook.co
 
 **Problem**: Given 3 jugs of capacites: 12, 8 and 5 litres. Our 12 L jug is completely filled. Using these 3 jugs split the water to obtain exactly 6 Litres.
 
-So I thought, instead of going hit and trial to find a solution, why not write a Python code and feel awesome about it.
+So I thought of writing a code in python to obtain the solution to the problem, instead of doing hit and trial.
 
-Because Why Not?
 
-So I used DFS to search through all the states of the jugs. At each state, we'll have certain choices of emptying water from one jug into another. We'll try each choice, calling our function for each state, and if we reach the goal state, we stop.
+I used DFS to search through all the states of the jugs. At each state, we'll have certain choices of emptying water from one jug into another. We'll try each choice, calling our function for each state, and if we reach the goal state, we stop.
 
 [*Note that the given program could be made smaller/modular, but it is more understandable given this way. Also, DFS might not give an optimal (best path) solution. For that use BFS*]
 

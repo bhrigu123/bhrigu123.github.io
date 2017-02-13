@@ -2,6 +2,7 @@
 layout: post
 title: "Ubuntu | Linux: Some handy tools to edit audio, video and images"
 date: 2016-04-01 19:56:20 +0530
+updated: 2016-04-01 19:56:20 +0530
 description: Resize, rotate images, cut audio and video, change video resolution and format, extract audio
 comments: true
 categories: Ubuntu, Linux

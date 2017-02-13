@@ -2,6 +2,8 @@
 layout: post
 title: "My own octopress theme and other blog updates"
 date: 2017-02-05 16:23:23 +0530
+updated: 2017-02-05 16:23:23 +0530
+description: "I just created a new Octopress theme, called Abacus. It can be used by anyone using Octopress."
 comments: true
 categories: 
 ---
