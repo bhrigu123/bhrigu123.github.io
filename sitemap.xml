@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://bhrigu.me/blog/2017/02/23/jeequery-journey/</loc>
+<lastmod>2017-02-23T13:55:06+05:30</lastmod>
+</url>
+<url>
 <loc>http://bhrigu.me/blog/2017/02/05/my-own-octopress-theme-and-other-blog-updates/</loc>
 <lastmod>2017-02-05T16:23:23+05:30</lastmod>
 </url>

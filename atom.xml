@@ -4,7 +4,7 @@
   <title><![CDATA[Bhrigu Srivastava]]></title>
   <link href="http://bhrigu.me/atom.xml" rel="self"/>
   <link href="http://bhrigu.me/"/>
-  <updated>2017-02-13T21:12:34+05:30</updated>
+  <updated>2017-02-23T21:27:15+05:30</updated>
   <id>http://bhrigu.me/</id>
   <author>
     <name><![CDATA[Bhrigu Srivastava]]></name>
@@ -12,6 +12,116 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[JEEQuery - Journey, Stats and Updates]]></title>
+    <link href="http://bhrigu.me/blog/2017/02/23/jeequery-journey/"/>
+    <updated>2017-02-23T13:55:06+05:30</updated>
+    <id>http://bhrigu.me/blog/2017/02/23/jeequery-journey</id>
+    <content type="html"><![CDATA[<p>It was the summer of 2015. I was down with an illness and had to stay confined in a room. Being too disinclined to prepare for interviews, I started out with a new django project, with the purpose of learning some new stuff in django.</p>
+
+<p>It started out to be a simple Q&amp;A app, like Quora. After a while, I had an idea of building a forum type app, exclusively for IIT-JEE preparations. And that&rsquo;s how it went. <!-- more --></p>
+
+<p>After several thoughts, my brother <a href="http://iyask.me">Yask</a> came up with the name <em>JEEQuery</em>, and we stuck to it.</p>
+
+<h3>Timeline</h3>
+
+<table class="table">
+<tr>
+<td>6th July '15</td>
+<td>Started a new project and continued working on it</td>
+</tr>
+<tr>
+<td>7th Aug</td>
+<td>Registered the domain name JEEQUERY</td>
+</tr>
+<tr>
+<td>1st Sep '15</td>
+<td>Announced JEEQuery release</td>
+</tr>
+<tr>
+<td>30th Sep</td>
+<td>Added Schools feature</td>
+</tr>
+<tr>
+<td>Oct '15</td>
+<td>Added Notifications feature</td>
+</tr>
+<tr>
+<td>Dec '15</td>
+<td>Math equations could be now used on the editor</td>
+</tr>
+</table>
+
+
+<p></p>
+
+<p>Alongside, we were also working on publicizing the website among the school students. Since we were just a two-member team, the only publicity we did was on the social platforms like Quora and Facebook.</p>
+
+<p>I also got some help in the online publicity from my friend Abhishek Dhyani.</p>
+
+<p>However, with the start of the year 2016, I had stepped down with the publicity and development work of JEEQuery. College reopened, and I had begun working on a different project (DTU Mart). It started to get wearisome to work on publicity, development, designing, etc singlehandedly. It made me realize that several dedicated teams for promotions, coding, designing, etc. are required for a project to work on a large scale.</p>
+
+<p>Although, even with hung publicity, the traffic kept on coming. Different students were posting their doubts and questions, and many were answering the questions too. This was a surprise to us too.</p>
+
+<p>We also received a few feedbacks from different people, thanking us for a website like this, and also providing suggestions to add new features.</p>
+
+<p>We also saw people were suggesting JEEQuery to others on Quora. One such instance:</p>
+
+<p><span class="quora-content-embed" data-name="How-can-a-non-coaching-student-clear-his-her-doubts-while-preparing-for-iit-jee/answer/Abhijeet-Soni-8">Read <a class="quora-content-link" data-width="559" load-full-answer="True" data-key="74cef4be45af5bc4975c01d393579ddf" data-id="23554278" data-embed="ivqdcwk" href="https://www.quora.com/How-can-a-non-coaching-student-clear-his-her-doubts-while-preparing-for-iit-jee/answer/Abhijeet-Soni-8" data-type="answer" data-height="250"><a href="https://www.quora.com/Abhijeet-Soni-8">Abhijeet Soni</a>&#039;s <a href="http://bhrigu.me/How-can-a-non-coaching-student-clear-his-her-doubts-while-preparing-for-iit-jee#ans23554278">answer</a> to <a href="http://bhrigu.me/How-can-a-non-coaching-student-clear-his-her-doubts-while-preparing-for-iit-jee" ref="canonical"><span class="rendered_qtext">How can a non-coaching student clear his/her doubts while preparing for iit-jee?</span></a></a> on <a href="https://www.__nousername__.main.quora.com">Quora</a><script type="text/javascript" src="https://www.quora.com/widgets/content"></script></span></p>
+
+<p><br>
+The site&rsquo;s SEO is good. Even searching for questions on Google displays our site on the top of the search results.</p>
+
+<p>However, there are still some issues and complications. One, the publicity was suspended, and I&rsquo;d grown weary of doing this work. Then, the number of users asking questions were much more than the number of users answering them. This left users with a lot of unanswered questions. Plus, I&rsquo;m not making any revenue from the website, which in turn is costing me from domain and hosting.</p>
+
+<p>As I&rsquo;ve said earlier - I would need a full dedicated team to run the website on a large scale.</p>
+
+<p>But, ever since the beginning, this was supposed to be a side project, which would help me in learning and give a boost to my resume/profile. And these things this project has already done :)</p>
+
+<h3>Stats</h3>
+
+<p>A snapshot of user visits on JEEQuery in the range 15th Jan 2017 to 15th Feb 2017:</p>
+
+<center>
+    <img class="[erimg]" src="http://bhrigu.me/images/jeequery/stats.jpeg" title="Stats" >
+</center>
+
+
+<p><br></p>
+
+<p>Monthly, there are around 2000 unique users visits and 2500+ page views, and most of it is organic traffic.</p>
+
+<h3>Updates and future</h3>
+
+<p>Just recently I had thought of reviewing the code of the project. Since this was my first ever full-fledged website, the code quality was not that good and had a lot of redundancy. I thus worked for a few days, in the last week, to improve the code quality of the project and remove the repetitions. I looked back at the development times of JEEQuery and its commit history ;) which inspired me to write a post about it.</p>
+
+<p>Some updates on the <a href="http://jeequery.com/about">about</a> page:</p>
+
+<center>
+    <img class="[erimg]" src="http://bhrigu.me/images/jeequery/about.jpeg" title="About" >
+</center>
+
+
+<p><br></p>
+
+<p>I&rsquo;m not sure what the future has in store for JEEQuery. Time will tell&hellip;.</p>
+
+<h4>Quick links:</h4>
+
+<ul>
+<li><p>Website: <a href="http://jeequery.com">jeequery.com</a></p></li>
+<li><p>Blog post for JEEQuery announcement: <a href="http://bhrigu.me/blog/2015/09/01/deployed-and-hosted/">post</a></p></li>
+<li><p>Yask&rsquo;s blog post for School feature announcement: <a href="https://medium.com/@yask123/introducing-schools-in-jeequery-e04e6fc23a10">post</a></p></li>
+<li><p>An <a href="https://www.facebook.com/media/set/?set=a.10209055616741212.1073741829.1641834923&amp;type=1&amp;l=763511c547">album</a> uploaded on facebook for JEEQuery:</p></li>
+</ul>
+
+
+<p><a href="https://www.facebook.com/media/set/?set=a.10209055616741212.1073741829.1641834923&type=1&l=763511c547">
+    <img src="http://bhrigu.me/images/jeequery/album.jpeg">
+</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[My Own Octopress Theme and Other Blog Updates]]></title>
