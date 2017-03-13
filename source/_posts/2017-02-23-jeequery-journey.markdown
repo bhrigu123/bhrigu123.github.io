@@ -3,6 +3,7 @@ layout: post
 title: "JEEQuery - Journey, Stats and Updates"
 date: 2017-02-23 13:55:06 +0530
 comments: true
+description: "A look back at my JEEQuery development times. Its journey, statistics and updates."
 categories: 
 ---
 
