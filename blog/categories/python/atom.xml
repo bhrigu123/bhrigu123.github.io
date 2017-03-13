@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Python | Bhrigu Srivastava]]></title>
   <link href="http://bhrigu.me/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://bhrigu.me/"/>
-  <updated>2017-02-23T21:36:02+05:30</updated>
+  <updated>2017-03-13T19:11:53+05:30</updated>
   <id>http://bhrigu.me/</id>
   <author>
     <name><![CDATA[Bhrigu Srivastava]]></name>
@@ -12,6 +12,35 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Instant-Lyrics: New Project]]></title>
+    <link href="http://bhrigu.me/blog/2017/03/13/instant-lyrics-new-project/"/>
+    <updated>2017-03-13T17:48:01+05:30</updated>
+    <id>http://bhrigu.me/blog/2017/03/13/instant-lyrics-new-project</id>
+    <content type="html"><![CDATA[<p>I love listening to music on Spotify. There were times I used to wish that I could instantly view lyrics of the song being played on Spotify, without going through the trouble of browsing the net. Well, not anymore. <!-- more --></p>
+
+<p>I&rsquo;ve created a python application that allows me to do so. It can pick up the currently playing Spotify song details, scrape the lyrics from the internet, and display it to you nicely in a separate window. All this in just one click. It&rsquo;s called <a href="http://bhrigu.me/Instant-Lyrics">Instant-Lyrics</a>.</p>
+
+<p>It&rsquo;s easy to install and get the app running. Check it out.</p>
+
+<p><img src="https://cloud.githubusercontent.com/assets/6123105/23824316/3fe58044-069a-11e7-804e-180ea4041002.jpeg" alt="Screenshot" /></p>
+
+<p>My brother had worked on a similar project (<a href="https://github.com/yask123/SpotifyLyrics">SpotifyLyrics</a>). But that app was only for Mac users, and I work on Linux. I wanted to create an app that could run on any Linux distro/flavor. Plus, I added other features like fetching the lyrics of any entered song. I added threading such that the lyrics window gets opened instantly, while the app fetches for lyrics in a separate thread.</p>
+
+<p>I used Python Gtk+3 to implement GUIs. Gtk+ can work on any UNIX-like platforms, Windows, and OSX.</p>
+
+<p>I&rsquo;ve tested the app on several Linux distros/flavors like Ubuntu, Elementary OS, Arch Linux and Kubuntu. I&rsquo;m planning to get the app running on OSX also.</p>
+
+<p>Quick Links:</p>
+
+<ul>
+<li><p><a href="http://bhrigu.me/Instant-Lyrics">Project page</a></p></li>
+<li><p><a href="https://github.com/bhrigu123/Instant-Lyrics">GitHub Repo</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Huffman Coding - Python Implementation]]></title>
