@@ -3,6 +3,7 @@ layout: post
 title: "Instant-Lyrics: New project"
 description: "Created a python app that shows lyrics of currently playing spotify song instantly"
 date: 2017-03-13 17:48:01 +0530
+updated: 2017-03-20 17:48:01 +0530
 comments: true
 categories: python
 ---
@@ -26,6 +27,23 @@ I used Python Gtk+3 to implement GUIs. Gtk+ can work on any UNIX-like platforms,
 
 
 I've tested the app on several Linux distros/flavors like Ubuntu, Elementary OS, Arch Linux and Kubuntu. I'm planning to get the app running on OSX also.
+
+
+## Update
+
+This project got featured on [OMG! Ubuntu](http://www.omgubuntu.co.uk/). Check out their post about Instant-Music [here](http://www.omgubuntu.co.uk/2017/03/get-lyrics-spotify-track-ubuntu-desktop). This was quite a deal for me.
+
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">See Lyrics for Any Song on Spotify with This <a href="https://twitter.com/hashtag/Ubuntu?src=hash">#Ubuntu</a> App - <a href="https://t.co/XgcxpueE0U">https://t.co/XgcxpueE0U</a> <a href="https://t.co/zZYVUx0YDU">pic.twitter.com/zZYVUx0YDU</a></p>&mdash; OMG! UBUNTU! (@omgubuntu) <a href="https://twitter.com/omgubuntu/status/843606668088770561">March 19, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+Also, 160+ points on [reddit post](https://www.reddit.com/r/Python/comments/60a9oe/shows_lyrics_of_currently_playing_spotify_song_or/)
+
+
+<center>
+	{% img [erimg] /images/lyrics/reddit.png Reddit %}
+</center><br>
 
 
 Quick Links:
