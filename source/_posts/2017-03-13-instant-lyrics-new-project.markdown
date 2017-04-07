@@ -26,7 +26,7 @@ My brother had worked on a similar project ([SpotifyLyrics](https://github.com/y
 I used Python Gtk+3 to implement GUIs. Gtk+ can work on any UNIX-like platforms, Windows, and OSX.
 
 
-I've tested the app on several Linux distros/flavors like Ubuntu, Elementary OS, Arch Linux and Kubuntu. I'm planning to get the app running on OSX also.
+I've tested the app on several Linux distros/flavors like Ubuntu, Elementary OS, Arch Linux and Kubuntu.
 
 
 ## Update
