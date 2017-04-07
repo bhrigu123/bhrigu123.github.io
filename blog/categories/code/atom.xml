@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Code | Bhrigu Srivastava]]></title>
   <link href="http://bhrigu.me/blog/categories/code/atom.xml" rel="self"/>
   <link href="http://bhrigu.me/"/>
-  <updated>2017-03-28T00:01:31+05:30</updated>
+  <updated>2017-04-07T12:59:31+05:30</updated>
   <id>http://bhrigu.me/</id>
   <author>
     <name><![CDATA[Bhrigu Srivastava]]></name>
@@ -637,14 +637,6 @@ class HuffmanCoding:
 
 	&quot;&quot;&quot; functions for decompression: &quot;&quot;&quot;
 
-	def text_to_binary(self, text):
-		encoded_text = &quot;&quot;
-		for character in text:
-			ascii = ord(character)
-			binary = &quot;{0:08b}&quot;.format(ascii)
-			encoded_text += binary
-		return encoded_text
-
 	def remove_padding(self, padded_encoded_text):
 		padded_info = padded_encoded_text[:8]
 		extra_padding = int(padded_info, 2)
@@ -689,9 +681,7 @@ class HuffmanCoding:
 			output.write(decompressed_text)
 
 		print(&quot;Decompressed&quot;)
-		return output_path
-
-</code></pre></noscript></div>
+		return output_path</code></pre></noscript></div>
 </p>
 
 <h3 style="margin: 0;

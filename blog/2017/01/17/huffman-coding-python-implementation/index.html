@@ -81,10 +81,10 @@
 
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li ><a href="/about">About</a></li>
-<li ><a href="/projects">Projects</a></li>
-<li ><a href="/music">Music</a></li>
+                
+<li ><a href="/about">About</a></li>
 <li ><a href="/blog/archives">Archives</a></li>
+
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -348,14 +348,6 @@ class HuffmanCoding:
 
     &quot;&quot;&quot; functions for decompression: &quot;&quot;&quot;
 
-    def text_to_binary(self, text):
-        encoded_text = &quot;&quot;
-        for character in text:
-            ascii = ord(character)
-            binary = &quot;{0:08b}&quot;.format(ascii)
-            encoded_text += binary
-        return encoded_text
-
     def remove_padding(self, padded_encoded_text):
         padded_info = padded_encoded_text[:8]
         extra_padding = int(padded_info, 2)
@@ -400,9 +392,7 @@ class HuffmanCoding:
             output.write(decompressed_text)
 
         print(&quot;Decompressed&quot;)
-        return output_path
-
-</code></pre></noscript></div>
+        return output_path</code></pre></noscript></div>
 
 
 
