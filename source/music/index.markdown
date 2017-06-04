@@ -14,6 +14,11 @@ I like to play guitar and I mostly do covers of the songs I like.
 Back in 2009, I used to own an electric guitar. After playing the heck out of it, I now have a Yamaha F310 acoustic guitar.
 
 
+#### The A Team (Ed Sheeran)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_4UI2tUnsEE?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
 #### Wish You Were Here (Pink Floyd)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Idhz4qXwtUc?rel=0" frameborder="0" allowfullscreen></iframe>
