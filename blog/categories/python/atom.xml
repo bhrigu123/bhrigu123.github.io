@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Python | Bhrigu Srivastava]]></title>
   <link href="http://bhrigu.me/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://bhrigu.me/"/>
-  <updated>2017-10-16T18:59:57+05:30</updated>
+  <updated>2017-11-07T00:31:42+05:30</updated>
   <id>http://bhrigu.me/</id>
   <author>
     <name><![CDATA[Bhrigu Srivastava]]></name>
@@ -358,6 +358,8 @@ h.decompress(output_path)
 <p>Plus, the decompressed file comes out to be exactly the same as the original file, without any data loss.</p>
 
 <p>And that is all for Huffman Coding implementation, with compression and decompression. This was fun to code.</p>
+
+<blockquote><p>The above program requires the decompression function to be run using the same object that created the compression file (because the code mapping is stored in its data members). We can also make the compression and decompression function run independently, if somehow, during compression we store the mapping info also in the compressed file (in the beginning). Then, during decompression, we will first read the mapping info from the file, then use that mapping info to decompress the rest file.</p></blockquote>
 
 <p><button type="button" class="btn btn-default">
     <a href="https://github.com/bhrigu123/huffman-coding" target="_blank">
