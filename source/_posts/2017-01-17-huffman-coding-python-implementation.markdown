@@ -136,6 +136,9 @@ Plus, the decompressed file comes out to be exactly the same as the original fil
 
 And that is all for Huffman Coding implementation, with compression and decompression. This was fun to code.
 
+> The above program requires the decompression function to be run using the same object that created the compression file (because the code mapping is stored in its data members). We can also make the compression and decompression function run independently, if somehow, during compression we store the mapping info also in the compressed file (in the beginning). Then, during decompression, we will first read the mapping info from the file, then use that mapping info to decompress the rest file.
+
+
 <button type="button" class="btn btn-default">
 	<a href="https://github.com/bhrigu123/huffman-coding" target="_blank">
 	View on GitHub</a>
