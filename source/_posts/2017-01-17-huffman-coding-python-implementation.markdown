@@ -89,7 +89,7 @@ The function *decompress()* requires path of the file to be decompressed. (and *
     Running the program:</h3>
 
 
-Save the above code.
+Save the above code, in a file `huffman.py`.
 
 
 Create a sample text file. Or download a sample file from [sample.txt](https://raw.githubusercontent.com/bhrigu123/huffman-coding/master/sample.txt) (right click, save as)
