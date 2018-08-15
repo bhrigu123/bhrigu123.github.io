@@ -109,12 +109,38 @@ I'm not sure what the future has in store for JEEQuery. Time will tell....
 
 * Website: [jeequery.com](http://jeequery.com)
 
-* Blog post for JEEQuery announcement: [post](http://bhrigu.me/blog/2015/09/01/deployed-and-hosted/)
+* Blog post for JEEQuery announcement (1st Sep 2015): [post](http://bhrigu.me/blog/2015/09/01/deployed-and-hosted/)
 
-* Yask's blog post for School feature announcement: [post](https://medium.com/@yask123/introducing-schools-in-jeequery-e04e6fc23a10)
+* Yask's blog post for School feature announcement (29th Sep 2015): [post](https://medium.com/@yask123/introducing-schools-in-jeequery-e04e6fc23a10)
 
 * An [album](https://www.facebook.com/media/set/?set=a.10209055616741212.1073741829.1641834923&type=1&l=763511c547) uploaded on facebook for JEEQuery:
 
 <a href="https://www.facebook.com/media/set/?set=a.10209055616741212.1073741829.1641834923&type=1&l=763511c547">
 	<img src="/images/jeequery/album.jpeg">
 </a>
+
+
+
+----------------------------
+
+*[update <15 August 2018>]*
+
+Oh well, the time has come. On 11th August 2018, I terminated the EC2 instance hosting the JEEQuery server. 
+
+After discussing with my brother, we decided on shutting down the website as we did not have any time to invest on it. The cost of hosting and domain were not getting redeemed too (had no intentions of putting up ads on the website).
+
+Having worked on it excessively, & being my first ever website launched, JEEQuery had a special place in my heart and it was hard to let it go.
+It reminds me of its development days and how me and my brother were always into building or solving something back in those days.
+
+But then again, not everything stays forever. 
+
+After starting our jobs, we haven't been doing much of development / building tools out of interests like before. I hope to someday get back on that track in the future.
+
+
+Adios JEEQuery :')
+<div style="max-width: 300px;">
+{% video /images/jeequery/jeequery_shutdown.mp4 300 500 %}
+</div>
+
+
+A website walkthrough video I uploaded on YouTube earlier: https://youtu.be/iiZXS8cgFvQ
