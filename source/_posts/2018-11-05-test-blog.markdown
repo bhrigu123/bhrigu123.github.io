@@ -30,11 +30,11 @@ He brought along some interesting stuff including a pair of *allbirds* shoes, a 
 </center><br>
 
 Currently playing - *Mr. Brightside* - on those bluetooth spearkers. It's a killer song ( pun intended;) ).  
-Now that we are talking about music, I had quite to share about it. Recently, I have started listening to lots of different Rock (mostly Classic) songs, that it feels like for more than half of the time in my day I'm listing to some song or other. I discoverd lots of new songs (like Last Nite (The Strokes), D'yer Mak'er (Led Zeppling), etc.) and have made a pretty good Rock n Roll collection on my Spotify playlist.
+Now that we are talking about music, I had quite to share about it. Recently, I have started listening to lots of different Rock (mostly Classic) songs, that it feels like for more than half of the time in my day I'm listing to some song or other. I discoverd lots of new songs (like Last Nite (The Strokes), D'yer Mak'er (Led Zeppelin), etc.) and have made a pretty good Rock n Roll collection on my Spotify playlist.
 I have so much to talk about some of the new songs I discovered and about my music interests that it's going to take a whole new blog post to write about it (Ah! I just got the idea for a future blog post).
 
 
-Okay! What else to write about? I am staring at my good 'ol study table standing in the corner of my room. Okay, I don't know why I'm thinking over a table so much now. Probably because I've had it since pretty much the beginning of when we moved into this house (in 2010). Had gone through my 10th and 12th board exams with it, along with the engineering entrances, college work, competitive coding, development projects, interview preps and playing FIFA 14 endlessly. Some great ideas and projects had originated from there:) 
+Okay! What else to write about? I am staring at my good 'ol study table standing in the corner of my room. Okay, I don't know why I'm thinking over a table so much now. Probably because I've had it since pretty much the beginning of when we moved into this house (in 2010). Had gone through my 10th and 12th board exams with it, along with the engineering entrances, college work, competitive coding, development projects, interview preps and playing FIFA 14 endlessly. Some great ideas and projects have originated from this table:) 
 
 <center>
 	{% img [erimg] /images/testblog/table.jpg table %}
@@ -63,9 +63,10 @@ So, today I took my trusty Firefox Cyclone D out for a cleaning and air re-fill.
 <center><small>Streets along the Lodhi Garden</small></center><br>
 
 
-Well, I really think I should just finish up this blog post now.
+Well, I'm really tired now and I think I should just end this blog post now.
 
-> Happy Diwali, y'all!
+Happy Diwali, y'all!
+
 
 <center>
 	{% img [erimg] /images/testblog/diwali.jpg Diwali %}
