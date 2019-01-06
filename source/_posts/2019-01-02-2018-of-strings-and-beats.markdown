@@ -42,7 +42,7 @@ Me and my (then) flatmate Duggal, used to mess around regularly at our friends' 
 
 * throwing vegetables at neighbours flats from balcony whose windows were open (got caught once)
 
-* always blocking a friend's room with a mattress every time we went there (just imagine the look on his face when he would open the door and find a big ass mattress in front of him xD)
+* always blocking a friend's room with a mattress every time we went there
 
 * Piling up all the furniture in front of one of our friend's room because he wouldn't open the door.
 
