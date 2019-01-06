@@ -14,7 +14,7 @@ Well, 2018 is over and it feels like it went by so fast. As compared to 2017 or 
 ---
 I remember I had spent the 2018's new year midnight hanging out with my group of college / office friends at a rooftop restaurant, proposing toasts. Those were some fine times with that group and we always used to have some good laughs when we were together. Who knew by the year end it wouldn't exactly be the same. 
 
-Six months into job and I was putting much efforts to complete my then-ongoing project. Anyways, it was a good start of the year as I also made my first international trip in January to Singapore. I had made some new friends in office and made a wildcard entry to their plan of travelling to Singapore. We also made a brief journey to Krabi / Phe Phe Islands in Thailand. 
+Anyways, it was a good start of the year as I also made my first international trip in January to Singapore. I had made some new friends in office and made a wildcard entry to their plan of travelling to Singapore. We also made a brief journey to Krabi / Phe Phe Islands in Thailand. 
 
 <center>
 	{% img [erimg] /images/year2018/singapore.jpg Singapore %}
