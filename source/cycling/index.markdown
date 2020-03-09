@@ -6,7 +6,7 @@ sharing: false
 footer: false
 ---
 
-I have a Firefox Cyclone D26. Almost everyday I take it out and explore the roads and places of New Delhi.
+I have a Firefox Cyclone D26. Almost everyday (edit: till I went to Hyd in 2017) I take it out and explore the roads and places of New Delhi.
 
 
 
