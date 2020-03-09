@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "2019 - Year in Review"
-description: "2019 new year blog post"
+description: "My 2019 year in review blog post"
 date: 2020-03-09 14:07:45 +0530
 comments: true
 categories: 
