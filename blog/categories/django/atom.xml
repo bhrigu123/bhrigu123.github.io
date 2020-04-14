@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Django | Bhrigu Srivastava]]></title>
-  <link href="http://bhrigu.me/blog/categories/django/atom.xml" rel="self"/>
-  <link href="http://bhrigu.me/"/>
-  <updated>2020-03-28T17:47:26+05:30</updated>
-  <id>http://bhrigu.me/</id>
+  <link href="https://bhrigu.me/blog/categories/django/atom.xml" rel="self"/>
+  <link href="https://bhrigu.me/"/>
+  <updated>2020-04-14T23:41:32+05:30</updated>
+  <id>https://bhrigu.me/</id>
   <author>
     <name><![CDATA[Bhrigu Srivastava]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Django: How to Add ForeignKey to Multiple Models]]></title>
-    <link href="http://bhrigu.me/blog/2016/05/21/django-how-to-add-foreignkey-to-multiple-models/"/>
+    <link href="https://bhrigu.me/blog/2016/05/21/django-how-to-add-foreignkey-to-multiple-models/"/>
     <updated>2016-05-21T01:28:37+05:30</updated>
-    <id>http://bhrigu.me/blog/2016/05/21/django-how-to-add-foreignkey-to-multiple-models</id>
+    <id>https://bhrigu.me/blog/2016/05/21/django-how-to-add-foreignkey-to-multiple-models</id>
     <content type="html"><![CDATA[<p>Basically, how to make relation to more than one type of model, using one ForeignKey. (using <em>contenttypes</em> app and <em>Generic Relations</em>)</p>
 
 <p>Suppose you have two models: <code>Article</code> and <code>Post</code> <!--more--></p>
@@ -110,9 +110,9 @@ class Post(models.Model):
   
   <entry>
     <title type="html"><![CDATA[Starting Django Project]]></title>
-    <link href="http://bhrigu.me/blog/2015/07/06/starting-django-project/"/>
+    <link href="https://bhrigu.me/blog/2015/07/06/starting-django-project/"/>
     <updated>2015-07-06T09:25:47+05:30</updated>
-    <id>http://bhrigu.me/blog/2015/07/06/starting-django-project</id>
+    <id>https://bhrigu.me/blog/2015/07/06/starting-django-project</id>
     <content type="html"><![CDATA[<p><code>django-admin.py startproject newproj</code><br>
 I had learnt the django framework basics quite a while ago, but never worked on or made a complete functional project.<br>
 To kick off, I&rsquo;m starting a basic Q&amp;A app using django, and plan to learn along with the challenges I face, and discover new stuff.<!--more--></p>

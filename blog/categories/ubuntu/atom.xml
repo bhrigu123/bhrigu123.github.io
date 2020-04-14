@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Ubuntu, | Bhrigu Srivastava]]></title>
-  <link href="http://bhrigu.me/blog/categories/ubuntu/atom.xml" rel="self"/>
-  <link href="http://bhrigu.me/"/>
-  <updated>2020-03-28T17:47:26+05:30</updated>
-  <id>http://bhrigu.me/</id>
+  <link href="https://bhrigu.me/blog/categories/ubuntu/atom.xml" rel="self"/>
+  <link href="https://bhrigu.me/"/>
+  <updated>2020-04-14T23:41:32+05:30</updated>
+  <id>https://bhrigu.me/</id>
   <author>
     <name><![CDATA[Bhrigu Srivastava]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Ubuntu | Linux: Some Handy Tools to Edit Audio, Video and Images]]></title>
-    <link href="http://bhrigu.me/blog/2016/04/01/ubuntu-some-handy-tools-to-edit-audio-slash-video/"/>
+    <link href="https://bhrigu.me/blog/2016/04/01/ubuntu-some-handy-tools-to-edit-audio-slash-video/"/>
     <updated>2016-04-01T19:56:20+05:30</updated>
-    <id>http://bhrigu.me/blog/2016/04/01/ubuntu-some-handy-tools-to-edit-audio-slash-video</id>
+    <id>https://bhrigu.me/blog/2016/04/01/ubuntu-some-handy-tools-to-edit-audio-slash-video</id>
     <content type="html"><![CDATA[<center>
     <img class="[erimg]" src="/images/ubuntutools/ubuntu.jpg" title="Ubuntu" >
 </center>

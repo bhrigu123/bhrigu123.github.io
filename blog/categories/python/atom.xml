@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Python | Bhrigu Srivastava]]></title>
-  <link href="http://bhrigu.me/blog/categories/python/atom.xml" rel="self"/>
-  <link href="http://bhrigu.me/"/>
-  <updated>2020-03-28T17:47:26+05:30</updated>
-  <id>http://bhrigu.me/</id>
+  <link href="https://bhrigu.me/blog/categories/python/atom.xml" rel="self"/>
+  <link href="https://bhrigu.me/"/>
+  <updated>2020-04-14T23:41:32+05:30</updated>
+  <id>https://bhrigu.me/</id>
   <author>
     <name><![CDATA[Bhrigu Srivastava]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Instant-Lyrics: New Project]]></title>
-    <link href="http://bhrigu.me/blog/2017/03/13/instant-lyrics-new-project/"/>
+    <link href="https://bhrigu.me/blog/2017/03/13/instant-lyrics-new-project/"/>
     <updated>2017-03-13T17:48:01+05:30</updated>
-    <id>http://bhrigu.me/blog/2017/03/13/instant-lyrics-new-project</id>
+    <id>https://bhrigu.me/blog/2017/03/13/instant-lyrics-new-project</id>
     <content type="html"><![CDATA[<p>I love listening to music on Spotify. There were times I used to wish that I could instantly view lyrics of the song being played on Spotify, without going through the trouble of browsing the net. Well, not anymore. <!-- more --></p>
 
 <p>I&rsquo;ve created a python application that allows me to do so. It can pick up the currently playing Spotify song details, scrape the lyrics from the internet, and display it to you nicely in a separate window. All this in just one click. It&rsquo;s called <a href="http://bhrigu.me/Instant-Lyrics">Instant-Lyrics</a>.</p>
@@ -63,9 +63,9 @@
   
   <entry>
     <title type="html"><![CDATA[Huffman Coding - Python Implementation]]></title>
-    <link href="http://bhrigu.me/blog/2017/01/17/huffman-coding-python-implementation/"/>
+    <link href="https://bhrigu.me/blog/2017/01/17/huffman-coding-python-implementation/"/>
     <updated>2017-01-17T23:47:55+05:30</updated>
-    <id>http://bhrigu.me/blog/2017/01/17/huffman-coding-python-implementation</id>
+    <id>https://bhrigu.me/blog/2017/01/17/huffman-coding-python-implementation</id>
     <content type="html"><![CDATA[<p><a href="https://en.wikipedia.org/wiki/Huffman_coding">Huffman Coding</a> is one of the lossless data compression techniques. It assigns variable-length codes to the input characters, based on the frequencies of their occurence. The most frequent character is given the smallest length code. <br> <!-- more --></p>
 
 <center>
@@ -370,9 +370,9 @@ h.decompress(output_path)
   
   <entry>
     <title type="html"><![CDATA[3 Jug Problem - Python Code]]></title>
-    <link href="http://bhrigu.me/blog/2016/04/04/3-jug-problem-python-code/"/>
+    <link href="https://bhrigu.me/blog/2016/04/04/3-jug-problem-python-code/"/>
     <updated>2016-04-04T23:36:57+05:30</updated>
-    <id>http://bhrigu.me/blog/2016/04/04/3-jug-problem-python-code</id>
+    <id>https://bhrigu.me/blog/2016/04/04/3-jug-problem-python-code</id>
     <content type="html"><![CDATA[<p>I came across this image by a Facebook page (<a href="https://www.facebook.com/curiositydotcom/">Curiosity</a>), which asked a solution to the famous Water Jug problem, involving 3 jugs.</p>
 
 <center>
