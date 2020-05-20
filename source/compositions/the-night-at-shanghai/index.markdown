@@ -32,4 +32,17 @@ Just then, we heard a voice of a man from behind.
 
 >"o hey! Yhu guys lookin fo' hostel? Follo me!"
 
-We turned. It was a stout man, wearing a vest, shorts and flip-flops, walking steadily towards us. 
+We turned. It was a stout man, in a vest, shorts and flip-flops, walking steadily towards us. 
+
+
+### Follow the vest guy
+Next thing we knew we were following that person. We were walking along the perimeter of the residence outside its boundaries. He was walking ten steps ahead of us. There was also a second man walking along with the him and looked like was also guided by the vest guy. (Vest guy - I don't know what else to call him)
+
+It's true we *were* a little anxious, no doubt. But it's not like we had much options. "Oh great, just imagine getting looted in Shangai" - Rohan joked. I laughed but at the same time I was like *'What the hell, dude!'*.
+
+>"yhu guys students, right?"
+
+The vest guy called out. Neither of us responded not knowing what to say, and probably thinking the other one would respond. We kept on walking.
+
+We arrived at what looked like a back entry of the residence. It was dark, unguarded and what seemed like an unofficial entry inside. We walked and were officially inside the community ()
+
