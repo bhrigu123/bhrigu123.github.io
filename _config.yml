@@ -97,5 +97,8 @@ disqus_show_comment_count: false
 # Google Analytics
 google_analytics_tracking_id: UA-64358360-1
 
+# Google AdSense
+google_adsense_client: ca-pub-9580174385855769
+
 # Facebook Like
 facebook_like: true
