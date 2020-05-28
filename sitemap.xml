@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://bhrigu.me/blog/2020/05/24/track-your-time-effectively-and-easily-using-google-sheets-or-excel/</loc>
+<lastmod>2020-05-24T21:01:25+05:30</lastmod>
+</url>
+<url>
 <loc>https://bhrigu.me/blog/2020/04/12/mac-os-x-command-line-tools-to-edit-media/</loc>
 <lastmod>2020-04-12T21:24:41+05:30</lastmod>
 </url>
@@ -81,16 +85,22 @@
 <lastmod>2015-06-18T23:01:16+05:30</lastmod>
 </url>
 <url>
-<loc>https://bhrigu.me/archives/</loc>
+<loc>https://bhrigu.me/blog/</loc>
 </url>
 <url>
 <loc>https://bhrigu.me/blog/archives/</loc>
 </url>
 <url>
+<loc>https://bhrigu.me/archives/</loc>
+</url>
+<url>
 <loc>https://bhrigu.me/</loc>
 </url>
 <url>
-<loc>https://bhrigu.me/blog/</loc>
+<loc>https://bhrigu.me/music/</loc>
+</url>
+<url>
+<loc>https://bhrigu.me/cycling/</loc>
 </url>
 <url>
 <loc>https://bhrigu.me/compositions/poem-feb-20/</loc>
@@ -102,16 +112,7 @@
 <loc>https://bhrigu.me/projects/</loc>
 </url>
 <url>
-<loc>https://bhrigu.me/compositions/the-night-at-shanghai/</loc>
-</url>
-<url>
-<loc>https://bhrigu.me/music/</loc>
-</url>
-<url>
 <loc>https://bhrigu.me/about/</loc>
-</url>
-<url>
-<loc>https://bhrigu.me/cycling/</loc>
 </url>
 <url>
 <loc>https://bhrigu.me/blog/categories/ubuntu/</loc>
@@ -144,7 +145,10 @@
 <loc>https://bhrigu.me/blog/categories/mac/</loc>
 </url>
 <url>
-<loc>https://bhrigu.me/posts/2/</loc>
+<loc>https://bhrigu.me/blog/categories/time-management/</loc>
+</url>
+<url>
+<loc>https://bhrigu.me/blog/categories/productivity/</loc>
 </url>
 <url>
 <loc>https://bhrigu.me/resume.pdf</loc>
