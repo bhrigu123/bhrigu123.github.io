@@ -8,12 +8,30 @@ sharing: false
 footer: false
 ---
 
-I like to play guitar and I mostly do covers of the songs I like.
+I like to play guitar and drums, and I mostly do covers of the songs I like.
 
+My YouTube Channel: https://www.youtube.com/channel/UCqgqCOWlxpYDPH5whE6mb3Q
 
-Back in 2009, I used to own an electric guitar. After playing the heck out of it, I now have a Yamaha F310 acoustic guitar.
 
 Recordings of a few of my covers:
+
+#### Choo Lo (The Local Train) Drum cover (May 2020)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_HFxfcP2D3A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+#### More Than a Feeling (Boston) Drum cover (Apr 2020)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/D3R_l7cos7U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+#### Here Comes the Sun (Beatles) Drum cover (Mar 2020)
+
+<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fbhrigu123%2Fposts%2F10219526916517162&show_text=true&width=552&appId=1592057364374704&height=400" width="552" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+---
 
 #### 21 Guns (Green Day) guitar solo (Sep 2018)
 
