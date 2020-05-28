@@ -17,7 +17,7 @@ The first step in **time management** is to assess yourself. Meaning, track how 
 <!-- more -->
 
 ### 1. Divide your responsibilities into categories  
-As stated by the book mentioned above, first thing you would want to do is to break down the tasks and duties into categories. For example, you can use the below five categories:  
+As also stated by the book mentioned above, first thing anyone does while managing time is to break down your tasks and duties into categories. For example, you can use the below five categories:  
 
 1. **Core Responsibilities** - Includes the tasks that make up the crux of your job. For example for a software engineer it would involve - coding, designing, meetings, reviews, reasearch, emails etc. Basically what your day-to-day tasks are in your job.
 2. **Personal Growth** - Any activity or project you work on for yourself, which you find valuable and fulfilling. For eg. hobbies (music, art, dance, etc), passions, side-projects, workout, skill-development, etc.
