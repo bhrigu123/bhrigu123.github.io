@@ -29,15 +29,15 @@ sidebar: false
 	<div class="">
 		<p>Hey! I am Bhrigu Srivastava.</p>
 		<section id="about">
-			<p>I am majoring in Information Technology from Delhi Technological University, and will be graduating in May 2017.</p>
+			<p>I am a software engineer and did my bachelors from Delhi Technological University (batch of 2017)</p>
 
-			<p>I love developing web apps and softwares. I also love problem solving and algorithmic puzzles. I have worked at <strong><u>Amazon</u></strong> as a software engineer intern.<br></p>
+			<p>I love developing web apps and softwares. I also love problem solving and algorithmic puzzles.</p>
 
 			<p>
-			I have developed websites like <a href="http://jeequery.com">JEEQuery</a> and <a href="http://dtumart.com">DTU Mart</a>, both using django.
+			I have developed production ready websites and apps serving customers for their needs. More on them present on my <a href="/projects">Projcets</a> page
 			</p>
 
-			<p>I also created <a href="https://github.com/bhrigu123/classifier">classifier</a>, which is a python library for instant file organization. It currently has 600+ stars on Github.</p>
+			<p>I also created <a href="https://github.com/bhrigu123/classifier">classifier</a>, which is a python library for instant file organization. It currently has 900+ stars on Github.</p>
 
 			<p></p>
 
@@ -46,8 +46,8 @@ sidebar: false
 			<div class="links-list" role="group">
 		  		<li><a href="/projects">Projects</a></li>
 		  		<li><a href="/resume.pdf" target="_blank">Resume</a></li>
-		  		<li><a href="/music">Guitar / Music</a></li>
-		  		<li><a href="/">Blog / Home</a></li>
+		  		<li><a href="/music">Guitar & Drums</a></li>
+		  		<li><a href="/">Blog</a></li>
 			</div>
 		</section>
 
@@ -64,7 +64,7 @@ sidebar: false
 				</a>
 				<a class="col-md-3 col-xs-6" href="/music">
 					<i class="fa fa-3x fa-music" aria-hidden="true"></i><br>
-					Guitar
+					Guitar and Drums
 				</a>
 				<a class="col-md-3 col-xs-6">
 					<i class="fa fa-3x fa-futbol-o" aria-hidden="true"></i><br>
@@ -87,7 +87,7 @@ sidebar: false
 				</small>
 				<br>
 				<hr>
-				<p> Working for Amazon Global Selling team.
+				<p> Working for Amazon Global Logistics team.
 				</p>
 				<br>
 
@@ -98,7 +98,7 @@ sidebar: false
 				</small>
 				<br>
 				<hr>
-				<p> Worked for the Amazon Global Selling team, and built a complete Java Application and services which recognizes a seller’s country of origin by collecting data from various authoritative sources.
+				<p> Worked for the Amazon Global Selling team
 				</p>
 				<br>
 
