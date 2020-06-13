@@ -10,10 +10,15 @@ footer: false
 
 I like to play guitar and drums, and I mostly do covers of the songs I like.
 
-My YouTube Channel: https://www.youtube.com/channel/UCqgqCOWlxpYDPH5whE6mb3Q
+Subscribe to my YouTube Channel: https://www.youtube.com/channel/UCqgqCOWlxpYDPH5whE6mb3Q
 
 
-Recordings of a few of my covers:
+### Recordings of a few of my covers:
+
+#### Fortunate Son (Creedence Clearwater Revival) Drum cover (June 2020)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SQpfTvKkY7A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 #### Choo Lo (The Local Train) Drum cover (May 2020)
 
