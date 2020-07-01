@@ -4,7 +4,7 @@
   <title><![CDATA[Bhrigu Srivastava]]></title>
   <link href="https://bhrigu.me/atom.xml" rel="self"/>
   <link href="https://bhrigu.me/"/>
-  <updated>2020-06-14T00:01:39+05:30</updated>
+  <updated>2020-07-02T01:04:50+05:30</updated>
   <id>https://bhrigu.me/</id>
   <author>
     <name><![CDATA[Bhrigu Srivastava]]></name>
@@ -1290,6 +1290,20 @@ if you want to check it out.</p></blockquote>
 
 
 <p><br></p>
+
+<hr />
+
+<p><strong>Update</strong>: I now have this article as YouTube video lessons now. It&rsquo;s in two parts: 1) Explanation of Huffman Coding 2) Implementing Huffman Coding in Python with explanation and doing hands-on coding with a demo. Check out the videos on <strong>Youtube</strong> below:</p>
+
+<ol>
+<li><a href="https://youtu.be/_Kl3TtBXxq8">Huffman Coding - Explanation and Example</a></li>
+<li><a href="https://youtu.be/JCOph23TQTY">Huffman Coding - Python Implementation and Demo</a></li>
+</ol>
+
+
+<hr />
+
+<p>[contd.]</p>
 
 <p>I thought of implementing the data compression program. The key things in the implementation were: <br></p>
 
