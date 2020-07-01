@@ -2,7 +2,7 @@
 layout: post
 title: "Huffman Coding - Python Implementation"
 date: 2017-01-17 23:47:55 +0530
-updated: 2017-01-17 23:47:55 +0530
+updated: 2020-07-02 00:51:55 +0530
 description: Python implementation of Huffman Coding, with working compression and decompression functions
 comments: true
 categories: [Python, Code]
@@ -14,6 +14,16 @@ categories: [Python, Code]
 	{% img [erimg] /images/huffman/huffman.png HuffmanCoding %}
 </center><br>
 
+
+---
+**Update**: I now have this article as YouTube video lessons now. It's in two parts: 1) Explanation of Huffman Coding 2) Implementing Huffman Coding in Python with explanation and doing hands-on coding with a demo. Check out the videos on **Youtube** below:
+
+1. [Huffman Coding - Explanation and Example](https://youtu.be/_Kl3TtBXxq8)
+2. [Huffman Coding - Python Implementation and Demo](https://youtu.be/JCOph23TQTY)
+
+---
+
+[contd.]
 
 I thought of implementing the data compression program. The key things in the implementation were: <br> 
 
