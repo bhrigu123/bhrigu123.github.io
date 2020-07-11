@@ -4,7 +4,7 @@
   <title><![CDATA[Bhrigu Srivastava]]></title>
   <link href="https://bhrigu.me/atom.xml" rel="self"/>
   <link href="https://bhrigu.me/"/>
-  <updated>2020-07-11T16:13:13+05:30</updated>
+  <updated>2020-07-11T18:38:53+05:30</updated>
   <id>https://bhrigu.me/</id>
   <author>
     <name><![CDATA[Bhrigu Srivastava]]></name>
@@ -827,7 +827,7 @@ It reminds me of its development days and how me and my brother were always into
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[LRU Cache - C++ Implementation]]></title>
+    <title type="html"><![CDATA[LRU Cache - C++ and Java Implementation]]></title>
     <link href="https://bhrigu.me/blog/2017/01/22/lru-cache-c-plus-plus-implementation/"/>
     <updated>2017-01-22T23:50:26+05:30</updated>
     <id>https://bhrigu.me/blog/2017/01/22/lru-cache-c-plus-plus-implementation</id>
@@ -844,7 +844,7 @@ It reminds me of its development days and how me and my brother were always into
 
 <hr />
 
-<p>[contd.]</p>
+<p><strong>[contd. for C++]</strong></p>
 
 <p>Let&rsquo;s say, the capacity of a given cache (memory) is <em>C</em>.</p>
 
