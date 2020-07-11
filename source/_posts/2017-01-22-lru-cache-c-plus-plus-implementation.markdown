@@ -2,7 +2,7 @@
 layout: post
 title: "LRU Cache - C++ Implementation"
 date: 2017-01-22 23:50:26 +0530
-updated: 2017-01-22 23:50:26 +0530
+updated: 2020-07-11 16:05:26 +0530
 comments: true
 description: "LRU (Least Recently Used) algorithm implementation and explanation in C++"
 categories: [code, c++]
@@ -10,6 +10,13 @@ categories: [code, c++]
 
 LRU, or *Least Recetly Used*, is one of the [Page Replacement Algorithms](https://en.wikipedia.org/wiki/Page_replacement_algorithm), in which the system manages a given amount of memory - by making decisions what pages to keep in memory, and which ones to remove when the memory is full.  <!-- more -->
 
+---
+**Update**: I now have this article as a YouTube video tutorial also, where I talk about LRU, Data Structures and do hands on coding in **Java** (concept is pretty much same as C++). You can check out the video using below link:
+
+* [LRU Cache - Explanation, Java Implementation and Demo](https://youtu.be/EmOIbVN0zBE)
+
+---
+[contd.]
 
 Let's say, the capacity of a given cache (memory) is *C*.
 
