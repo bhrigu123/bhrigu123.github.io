@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Code | Bhrigu Srivastava]]></title>
   <link href="https://bhrigu.me/blog/categories/code/atom.xml" rel="self"/>
   <link href="https://bhrigu.me/"/>
-  <updated>2020-07-02T01:04:50+05:30</updated>
+  <updated>2020-07-11T16:13:13+05:30</updated>
   <id>https://bhrigu.me/</id>
   <author>
     <name><![CDATA[Bhrigu Srivastava]]></name>
@@ -19,6 +19,19 @@
     <updated>2017-01-22T23:50:26+05:30</updated>
     <id>https://bhrigu.me/blog/2017/01/22/lru-cache-c-plus-plus-implementation</id>
     <content type="html"><![CDATA[<p>LRU, or <em>Least Recetly Used</em>, is one of the <a href="https://en.wikipedia.org/wiki/Page_replacement_algorithm">Page Replacement Algorithms</a>, in which the system manages a given amount of memory - by making decisions what pages to keep in memory, and which ones to remove when the memory is full.  <!-- more --></p>
+
+<hr />
+
+<p><strong>Update</strong>: I now have this article as a YouTube video tutorial also, where I talk about LRU, Data Structures and do hands on coding in <strong>Java</strong> (concept is pretty much same as C++). You can check out the video using below link:</p>
+
+<ul>
+<li><a href="https://youtu.be/EmOIbVN0zBE">LRU Cache - Explanation, Java Implementation and Demo</a></li>
+</ul>
+
+
+<hr />
+
+<p>[contd.]</p>
 
 <p>Let&rsquo;s say, the capacity of a given cache (memory) is <em>C</em>.</p>
 
