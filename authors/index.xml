@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Bhrigu Srivastava</title>
-    <link>bhrigu123.github.io/authors/</link>
+    <link>https://bhrigu.me/authors/</link>
     <description>Recent content in Authors on Bhrigu Srivastava</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2016–2020, Bhrigu Srivastava; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 08 Dec 2020 23:22:22 +0530</lastBuildDate><atom:link href="bhrigu123.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Dec 2020 23:22:22 +0530</lastBuildDate><atom:link href="https://bhrigu.me/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>bhrigu123.github.io/authors/bhrigu/</link>
+      <link>https://bhrigu.me/authors/bhrigu/</link>
       <pubDate>Tue, 08 Dec 2020 23:22:22 +0530</pubDate>
       
-      <guid>bhrigu123.github.io/authors/bhrigu/</guid>
+      <guid>https://bhrigu.me/authors/bhrigu/</guid>
       <description></description>
     </item>
     

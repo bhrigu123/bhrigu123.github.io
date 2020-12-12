@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Django on Bhrigu Srivastava</title>
-    <link>bhrigu123.github.io/tags/django/</link>
+    <link>https://bhrigu.me/tags/django/</link>
     <description>Recent content in Django on Bhrigu Srivastava</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2016–2020, Bhrigu Srivastava; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 21 May 2016 00:00:00 +0000</lastBuildDate><atom:link href="bhrigu123.github.io/tags/django/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 21 May 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://bhrigu.me/tags/django/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Django How to Add Foreignkey to Multiple Models</title>
-      <link>bhrigu123.github.io/post/django-how-to-add-foreignkey-to-multiple-models/</link>
+      <link>https://bhrigu.me/post/django-how-to-add-foreignkey-to-multiple-models/</link>
       <pubDate>Sat, 21 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>bhrigu123.github.io/post/django-how-to-add-foreignkey-to-multiple-models/</guid>
+      <guid>https://bhrigu.me/post/django-how-to-add-foreignkey-to-multiple-models/</guid>
       <description>&lt;p&gt;Test string1&lt;/p&gt;
 &lt;p&gt;Basically, how to make relation to more than one type of model, using one ForeignKey. (using &lt;em&gt;contenttypes&lt;/em&gt; app and &lt;em&gt;Generic Relations&lt;/em&gt;)&lt;/p&gt;
 &lt;p&gt;Suppose you have two models: &lt;code&gt;Article&lt;/code&gt; and &lt;code&gt;Post&lt;/code&gt;&lt;/p&gt;</description>

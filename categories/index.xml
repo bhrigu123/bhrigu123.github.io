@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Bhrigu Srivastava</title>
-    <link>bhrigu123.github.io/categories/</link>
+    <link>https://bhrigu.me/categories/</link>
     <description>Recent content in Categories on Bhrigu Srivastava</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>Copyright © 2016–2020, Bhrigu Srivastava; all rights reserved.</copyright><atom:link href="bhrigu123.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2016–2020, Bhrigu Srivastava; all rights reserved.</copyright><atom:link href="https://bhrigu.me/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
