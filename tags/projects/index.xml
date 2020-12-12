@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Bhrigu Srivastava</title>
+    <link>bhrigu123.github.io/tags/projects/</link>
+    <description>Recent content in Projects on Bhrigu Srivastava</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2016–2020, Bhrigu Srivastava; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 13 Mar 2017 00:00:00 +0000</lastBuildDate><atom:link href="bhrigu123.github.io/tags/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Instant Lyrics New Project</title>
+      <link>bhrigu123.github.io/post/instant-lyrics-new-project/</link>
+      <pubDate>Mon, 13 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>bhrigu123.github.io/post/instant-lyrics-new-project/</guid>
+      <description>&lt;p&gt;I love listening to music on Spotify. There were times I used to wish that I could instantly view lyrics of the song being played on Spotify, without going through the trouble of browsing the net. Well, not anymore.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>JEEQuery - Journey, Stats and Updates</title>
+      <link>bhrigu123.github.io/post/jeequery-journey/</link>
+      <pubDate>Thu, 23 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>bhrigu123.github.io/post/jeequery-journey/</guid>
+      <description>&lt;p&gt;It was the summer of 2015. I was down with an illness and had to stay confined in a room. Being too disinclined to prepare for interviews, I started out with a new django project, with the purpose of learning some new stuff in django.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Deployed and Hosted</title>
+      <link>bhrigu123.github.io/post/deployed-and-hosted/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>bhrigu123.github.io/post/deployed-and-hosted/</guid>
+      <description>&lt;p&gt;&lt;code&gt;The site&#39;s live.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;It took a lot of work and testing to finally launch the beta version of &lt;a href=&#34;#&#34;&gt;JEEQuery&lt;/a&gt;. It is something I have been working on for a long time, which brought forward various challenges and hurdles, and kept me occupied all this time.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Starting Django Project</title>
+      <link>bhrigu123.github.io/post/starting-django-project/</link>
+      <pubDate>Mon, 06 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>bhrigu123.github.io/post/starting-django-project/</guid>
+      <description>&lt;p&gt;&lt;code&gt;django-admin.py startproject newproj&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;I had learnt the django framework basics quite a while ago, but never worked on or made a complete functional project.&lt;/p&gt;
+&lt;p&gt;To kick off, I&amp;rsquo;m starting a basic Q&amp;amp;A app using django, and plan to learn along with the challenges I face, and discover new stuff.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

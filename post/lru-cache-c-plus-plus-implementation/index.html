@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     Lru Cache C&#43;&#43; Implementation | 
+    Bhrigu Srivastava
+  
+</title><meta name="description" content="LRU (Least Recently Used) algorithm implementation and explanation in C&#43;&#43;"><meta name="author" content="Bhrigu Srivastava">
+
+<link rel="apple-touch-icon" href="/bhrigu123.github.io/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/bhrigu123.github.io/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/bhrigu123.github.io/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/bhrigu123.github.io/manifest.json">
+<link rel="mask-icon" href="/bhrigu123.github.io/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/bhrigu123.github.io/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism-okaidia.min.css">
+    
+
+
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <link rel="stylesheet" href="/bhrigu123.github.io/dist/main.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="bhrigu123.github.io/post/lru-cache-c-plus-plus-implementation/"><meta property="og:title" content="Lru Cache C&#43;&#43; Implementation" />
+<meta property="og:description" content="LRU (Least Recently Used) algorithm implementation and explanation in C&#43;&#43;" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="bhrigu123.github.io/post/lru-cache-c-plus-plus-implementation/" />
+<meta property="og:image" content="bhrigu123.github.io/others/lrucache.jpeg" />
+<meta property="article:published_time" content="2017-01-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-01-22T00:00:00+00:00" />
+<meta itemprop="name" content="Lru Cache C&#43;&#43; Implementation">
+<meta itemprop="description" content="LRU (Least Recently Used) algorithm implementation and explanation in C&#43;&#43;">
+<meta itemprop="datePublished" content="2017-01-22T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2017-01-22T00:00:00+00:00" />
+<meta itemprop="wordCount" content="674">
+<meta itemprop="image" content="bhrigu123.github.io/others/lrucache.jpeg">
+
+
+
+<meta itemprop="keywords" content="Programming," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="bhrigu123.github.io/others/lrucache.jpeg"/>
+
+<meta name="twitter:title" content="Lru Cache C&#43;&#43; Implementation"/>
+<meta name="twitter:description" content="LRU (Least Recently Used) algorithm implementation and explanation in C&#43;&#43;"/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="bhrigu123.github.io">Bhrigu Srivastava</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/bhrigu123.github.io/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/bhrigu123.github.io/about/">About</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">January 22, 2017</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>674 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>4 mins read</span>
+                        </div>
+
+                        <h1>Lru Cache C&#43;&#43; Implementation</h1>
+
+                        
+                    </div>
+                </div><div class="row justify-content-center mb-3">
+                                <div class="col-lg-10">
+                                    <img data-src="/bhrigu123.github.io/images/others/lrucache_hu2406199ccd58fbe2c8d65b6b8f1c1a1e_178196_900x500_fit_q75_box.jpeg" class="img-fluid rounded mx-auto d-block" alt="Lru Cache C&#43;&#43; Implementation">
+                                </div>
+                            </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <p>LRU, or <em>Least Recetly Used</em>, is one of the <a href="https://en.wikipedia.org/wiki/Page_replacement_algorithm">Page Replacement Algorithms</a>, in which the system manages a given amount of memory - by making decisions what pages to keep in memory, and which ones to remove when the memory is full.</p>
+<hr>
+<p><strong>Update</strong>: I now have this article as a YouTube video tutorial also, where I talk about LRU, Data Structures and do hands on coding in <strong>Java</strong> (concept is pretty much same as C++). You can check out the video using below link:</p>
+<ul>
+<li><a href="https://youtu.be/EmOIbVN0zBE">LRU Cache - Explanation, Java Implementation and Demo</a></li>
+</ul>
+<hr>
+<p><strong>[contd. for C++]</strong></p>
+<p>Let&rsquo;s say, the capacity of a given cache (memory) is <em>C</em>.</p>
+<p>Our memory stores key, value pairs in it.</p>
+<p>It should support the following operations:</p>
+<ul>
+<li>
+<p><code>get(key)</code> -  Get the value of the given key if it exists in the memory (else, let&rsquo;s say -1)</p>
+</li>
+<li>
+<p><code>put(key, value)</code> - Set, or insert the value if not present. If our cache reaches its capacity, we should remove the item which was least recently used.</p>
+</li>
+</ul>
+<p>Another constraint to the given problem is:<!-- raw HTML omitted -->
+Both the operations must be done in constant <a href="https://en.wikipedia.org/wiki/Time_complexity">Time Complexity</a>, ie in <em>O(1)</em>.</p>
+<p>Now, we need to think of some of the data structures, which would allow us to perform the above operations in <em>O(1)</em>.</p>
+<h3 id="choice-of-data-structures">Choice of data structures</h3>
+<ul>
+<li>
+<p><strong>Queue</strong> - We should maintain a Queue (double ended queue), in which the most recently used pages (items) are in the front, and the least recently used pages are in the rear. This would allow to remove the least recently used item in <em>O(1)</em> time.</p>
+</li>
+<li>
+<p><strong>Doubly Linked List</strong> - We should implement our Queue using a doubly linked list (instead of arrays), which would allow us to apply <em>shifting</em> operations in <em>O(1)</em> time. (like, when we need to shift a page to the front of the queue)</p>
+</li>
+<li>
+<p><strong>HashMap</strong> - We should hash the key values to the location where the page is stored. This would allow <code>get</code> operation in <em>O(1)</em> time.</p>
+</li>
+</ul>
+<h3 id="design-and-implementation">Design and Implementation</h3>
+<p>Now that we know which what all data structures to use, let&rsquo;s look at the implementation.</p>
+<p>Whenever a user <code>gets</code> a page, we return its value, and also move that page to the front of our Queue.</p>
+<p>Whenever a user <code>sets</code> a page, if the page is already present, we update its value and move that page to the front of our Queue, <!-- raw HTML omitted -->
+else we add a new page to our cache in the front of the Queue.<!-- raw HTML omitted -->
+But if our cache has reached its capacity, we remove the least recently used page (ie the rear item in our Queue) from our memory.</p>
+<ol>
+<li><code>class Node</code>
+<ol>
+<li>key</li>
+<li>value</li>
+<li>next node address</li>
+<li>previous node address</li>
+</ol>
+</li>
+<li><code>class DoublyLinkedList</code></li>
+</ol>
+<ul>
+<li>Data members:
+<ol>
+<li>front node address</li>
+<li>rear node address</li>
+</ol>
+</li>
+<li>Member functions:
+<ol>
+<li>move_page_to_head()</li>
+<li>remove_rear_page()</li>
+<li>get_rear_page()</li>
+<li>add_page_to_head()</li>
+</ol>
+</li>
+</ul>
+<ol start="3">
+<li><code>class LRUCache</code></li>
+</ol>
+<ul>
+<li>Data members:
+<ol>
+<li>capacity</li>
+<li>current size</li>
+<li>a DoublyLinkedList object</li>
+<li>Hashmap</li>
+</ol>
+</li>
+<li>Member functions:
+<ol>
+<li>get(key)</li>
+<li>put(key, value)</li>
+</ol>
+</li>
+</ul>
+<p>Let&rsquo;s make the 3 classes.</p>
+<h3 id="code">Code</h3>
+<script type="application/javascript" src="https://gist.github.com/bhrigu123/af96d2f734705ebbd8e050f190d01f17.js"></script>
+
+<h3 id="running-the-code">Running the code</h3>
+<p>Save the above code in a file, say of name <code>LRUCache.cpp</code>.</p>
+<p>In the same directory create another <code>.cpp</code> file in which we will use get() and put() functions of our LRU. Paste the code below, compile &amp; run it:</p>
+<pre><code class="language-cpp">#include &lt;iostream&gt;
+#include &quot;LRUCache.cpp&quot;
+using namespace std;
+
+int main() {
+	LRUCache cache(2);	// cache capacity 2
+	cache.put(2,2);
+	cout &lt;&lt; cache.get(2) &lt;&lt; endl;
+	cout &lt;&lt; cache.get(1) &lt;&lt; endl;
+	cache.put(1,1);
+	cache.put(1,5);
+	cout &lt;&lt; cache.get(1) &lt;&lt; endl;
+	cout &lt;&lt; cache.get(2) &lt;&lt; endl;
+	cache.put(8,8);
+	cout &lt;&lt; cache.get(1) &lt;&lt; endl;
+	cout &lt;&lt; cache.get(8) &lt;&lt; endl;
+
+}
+
+</code></pre>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted -->Output:<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<pre><code class="language-sh">2
+-1
+5
+2
+-1
+8
+</code></pre>
+<p>The output comes out to be correct (you can check by creating a cache of size 2, and executing the given <code>get</code> and <code>put</code> functions in the above order.)</p>
+<p>That is all for LRU Cache implementation - ie, the &ldquo;Least Recently Used Page replacement algorithm&rdquo;.</p>
+<p><code>Notes:</code></p>
+<blockquote>
+<p>Use <a href="http://www.cplusplus.com/reference/unordered_map/unordered_map/">unordered_map</a> instead of ordered maps as used above (ie just <code>map</code> was used above) to make it <strong><em>really</em></strong> O(1). To read difference: <a href="http://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/">unordered_map and map</a>.</p>
+</blockquote>
+<blockquote>
+<p>The LRU Cache problem is available on Leetcode at: <a href="https://leetcode.com/problems/lru-cache/">LRU Cache</a>
+if you want to check it out.</p>
+</blockquote>
+<p>Any feedback, doubts or questions, please leave in the comments.</p>
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/bhrigu123.github.io/tags/programming">
+                                    <i class="fas fa-tag mr-2"></i>Programming
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=bhrigu123.github.io%2fpost%2flru-cache-c-plus-plus-implementation%2f&text=Lru%20Cache%20C%2b%2b%20Implementation">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=bhrigu123.github.io%2fpost%2flru-cache-c-plus-plus-implementation%2f&title=Lru%20Cache%20C%2b%2b%20Implementation">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=bhrigu123.github.io%2fpost%2flru-cache-c-plus-plus-implementation%2f&t=Lru%20Cache%20C%2b%2b%20Implementation">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=bhrigu123.github.io%2fpost%2flru-cache-c-plus-plus-implementation%2f&title=Lru%20Cache%20C%2b%2b%20Implementation">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bhrigu" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="bhrigu123.github.io/post/huffman-coding-python-implementation/" class="d-block"><img data-src="/bhrigu123.github.io/images/huffman/huffman_hudfde406ed97f3c78cabe675f4c0cb9d9_14769_700x350_fill_box_smart1_2.png" class="card-img-top mx-auto d-block" alt="Huffman Coding Python Implementation"><div class="card-body">
+            <h4 class="card-title">Huffman Coding Python Implementation</h4>
+            <p class="card-text text-muted text-uppercase">January 17, 2017</p>
+            <div class="card-text">
+                Huffman Coding is one of the lossless data compression techniques. It assigns variable-length codes to the input characters, based on the frequencies of their occurence. The most frequent character is given the smallest length code.
+
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="bhrigu123.github.io/post/3-jug-problem-python-code/" class="d-block"><img data-src="/bhrigu123.github.io/images/jug/jug_hue1bd731db99909c43fb5d578833012dc_46136_700x350_fill_q75_box_smart1.jpg" class="card-img-top mx-auto d-block" alt="3 Jug Problem Python Code"><div class="card-body">
+            <h4 class="card-title">3 Jug Problem Python Code</h4>
+            <p class="card-text text-muted text-uppercase">April 4, 2016</p>
+            <div class="card-text">
+                I came across this image by a Facebook page (Curiosity), which asked a solution to the famous Water Jug problem, involving 3 jugs.
+
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div></div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="bhrigu123.github.io/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                        <a href="mailto:captain.bhrigu@gmail.com" class="icons d-block">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li><li class="list-inline-item">
+                            <a href="https://www.facebook.com/bhrigu123/" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://github.com/bhrigu123/" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com/CaptainBhrigu" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2016–2020, Bhrigu Srivastava; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/bhrigu123.github.io/dist/[vendors-node_modules_fortawesome_fontawesome-svg-core_index_es_js-node_modules_fortawesome_fr-02de40.js%20vendors-node_modules_jquery_dist_jquery_js.js]"></script>
+        
+    
+        
+            <script src="/bhrigu123.github.io/dist/app.js"></script>
+        
+    
+        
+            <script src="/bhrigu123.github.io/dist/bootstrap.js"></script>
+        
+    
+        
+            <script src="/bhrigu123.github.io/dist/ekkoLightbox.js"></script>
+        
+    
+        
+            <script src="/bhrigu123.github.io/dist/lazyload.js"></script>
+        
+    
+        
+            <script src="/bhrigu123.github.io/dist/main.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-64358360-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</body>
+</html>

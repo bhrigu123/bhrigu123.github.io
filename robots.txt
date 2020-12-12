@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: https://bhrigu.me/sitemap.xml 

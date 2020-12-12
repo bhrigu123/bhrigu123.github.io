@@ -1,160 +1,208 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://bhrigu.me/blog/2020/05/24/track-your-time-effectively-and-easily-using-google-sheets-or-excel/</loc>
-<lastmod>2020-05-24T21:01:25+05:30</lastmod>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/2020/04/12/mac-os-x-command-line-tools-to-edit-media/</loc>
-<lastmod>2020-04-12T21:24:41+05:30</lastmod>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/2020/03/09/2019-year-in-review/</loc>
-<lastmod>2020-03-09T14:07:45+05:30</lastmod>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/2019/01/02/2018-of-strings-and-beats/</loc>
-<lastmod>2019-01-02T00:59:47+05:30</lastmod>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/2018/11/05/test-blog/</loc>
-<lastmod>2018-11-05T23:42:12+05:30</lastmod>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/2017/03/13/instant-lyrics-new-project/</loc>
-<lastmod>2017-03-13T17:48:01+05:30</lastmod>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/2017/02/23/jeequery-journey/</loc>
-<lastmod>2017-02-23T13:55:06+05:30</lastmod>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/2017/02/05/my-own-octopress-theme-and-other-blog-updates/</loc>
-<lastmod>2017-02-05T16:23:23+05:30</lastmod>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/2017/01/22/lru-cache-c-plus-plus-implementation/</loc>
-<lastmod>2017-01-22T23:50:26+05:30</lastmod>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/2017/01/17/huffman-coding-python-implementation/</loc>
-<lastmod>2017-01-17T23:47:55+05:30</lastmod>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/2016/12/29/2016-my-year-in-review/</loc>
-<lastmod>2016-12-29T20:05:40+05:30</lastmod>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/2016/10/12/hyderabad-moments-amazon-internship/</loc>
-<lastmod>2016-10-12T11:38:45+05:30</lastmod>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/2016/06/03/photoshoot-at-lodhi-garden/</loc>
-<lastmod>2016-06-03T14:21:24+05:30</lastmod>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/2016/05/21/django-how-to-add-foreignkey-to-multiple-models/</loc>
-<lastmod>2016-05-21T01:28:37+05:30</lastmod>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/2016/04/17/a-song-of-ice-and-fire-analysis/</loc>
-<lastmod>2016-04-17T13:55:38+05:30</lastmod>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/2016/04/04/3-jug-problem-python-code/</loc>
-<lastmod>2016-04-04T23:36:57+05:30</lastmod>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/2016/04/01/ubuntu-some-handy-tools-to-edit-audio-slash-video/</loc>
-<lastmod>2016-04-01T19:56:20+05:30</lastmod>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/2015/09/01/deployed-and-hosted/</loc>
-<lastmod>2015-09-01T23:02:57+05:30</lastmod>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/2015/07/06/starting-django-project/</loc>
-<lastmod>2015-07-06T09:25:47+05:30</lastmod>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/2015/06/22/how-to-install-ubuntu-with-dual-boot-easy-step-wise-guide/</loc>
-<lastmod>2015-06-22T14:30:32+05:30</lastmod>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/2015/06/18/the-game-is-on/</loc>
-<lastmod>2015-06-18T23:01:16+05:30</lastmod>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/</loc>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/archives/</loc>
-</url>
-<url>
-<loc>https://bhrigu.me/archives/</loc>
-</url>
-<url>
-<loc>https://bhrigu.me/</loc>
-</url>
-<url>
-<loc>https://bhrigu.me/music/</loc>
-</url>
-<url>
-<loc>https://bhrigu.me/cycling/</loc>
-</url>
-<url>
-<loc>https://bhrigu.me/compositions/poem-feb-20/</loc>
-</url>
-<url>
-<loc>https://bhrigu.me/compositions/</loc>
-</url>
-<url>
-<loc>https://bhrigu.me/projects/</loc>
-</url>
-<url>
-<loc>https://bhrigu.me/about/</loc>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/categories/ubuntu/</loc>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/categories/django/</loc>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/categories/ubuntu/</loc>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/categories/linux/</loc>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/categories/python/</loc>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/categories/books/</loc>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/categories/photography/</loc>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/categories/code/</loc>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/categories/c-plus-plus/</loc>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/categories/java/</loc>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/categories/mac/</loc>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/categories/time-management/</loc>
-</url>
-<url>
-<loc>https://bhrigu.me/blog/categories/productivity/</loc>
-</url>
-<url>
-<loc>https://bhrigu.me/resume.pdf</loc>
-<lastmod>2020-06-04T16:38:51+05:30</lastmod>
-</url>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>bhrigu123.github.io/authors/bhrigu/</loc>
+    <lastmod>2020-12-08T23:22:22+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/authors/</loc>
+    <lastmod>2020-12-08T23:22:22+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/</loc>
+    <lastmod>2020-12-08T23:22:22+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/tags/journal/</loc>
+    <lastmod>2020-12-08T23:22:22+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/post/migrating-to-hugo/</loc>
+    <lastmod>2020-12-08T23:22:22+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/post/</loc>
+    <lastmod>2020-12-08T23:22:22+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/tags/</loc>
+    <lastmod>2020-12-08T23:22:22+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/tags/productivity/</loc>
+    <lastmod>2020-05-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/post/track-your-time-effectively-and-easily-using-google-sheets-or-excel/</loc>
+    <lastmod>2020-05-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/post/mac-os-x-command-line-tools-to-edit-media/</loc>
+    <lastmod>2020-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/post/2019-year-in-review/</loc>
+    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/tags/life/</loc>
+    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/about/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/biking/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/projects/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/post/2018-of-strings-and-beats/</loc>
+    <lastmod>2019-01-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/post/2018/11/05/test-blog/</loc>
+    <lastmod>2018-11-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/post/instant-lyrics-new-project/</loc>
+    <lastmod>2017-03-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/tags/music/</loc>
+    <lastmod>2017-03-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/tags/projects/</loc>
+    <lastmod>2017-03-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/post/jeequery-journey/</loc>
+    <lastmod>2017-02-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/post/my-own-octopress-theme-and-other-blog-updates/</loc>
+    <lastmod>2017-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/post/lru-cache-c-plus-plus-implementation/</loc>
+    <lastmod>2017-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/tags/programming/</loc>
+    <lastmod>2017-02-13T19:57:57+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/post/huffman-coding-python-implementation/</loc>
+    <lastmod>2017-01-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/post/2016-my-year-in-review/</loc>
+    <lastmod>2016-12-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/post/hyderabad-moments-amazon-internship/</loc>
+    <lastmod>2016-10-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/tags/photography/</loc>
+    <lastmod>2016-06-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/post/photoshoot-at-lodhi-garden/</loc>
+    <lastmod>2016-06-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/tags/django/</loc>
+    <lastmod>2016-05-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/post/django-how-to-add-foreignkey-to-multiple-models/</loc>
+    <lastmod>2016-05-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/post/a-song-of-ice-and-fire-analysis/</loc>
+    <lastmod>2016-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/tags/books/</loc>
+    <lastmod>2016-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/post/3-jug-problem-python-code/</loc>
+    <lastmod>2017-02-13T19:57:57+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/post/ubuntu-some-handy-tools-to-edit-audio-slash-video/</loc>
+    <lastmod>2016-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/post/deployed-and-hosted/</loc>
+    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/post/starting-django-project/</loc>
+    <lastmod>2015-07-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/post/how-to-install-ubuntu-with-dual-boot-easy-step-wise-guide/</loc>
+    <lastmod>2015-06-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/post/the-game-is-on/</loc>
+    <lastmod>2015-06-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>bhrigu123.github.io/series/</loc>
+  </url>
+  
 </urlset>

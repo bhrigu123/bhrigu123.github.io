@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Productivity on Bhrigu Srivastava</title>
+    <link>bhrigu123.github.io/tags/productivity/</link>
+    <description>Recent content in Productivity on Bhrigu Srivastava</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2016–2020, Bhrigu Srivastava; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 24 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="bhrigu123.github.io/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Track Your Time Effectively and Easily Using Google Sheets or Excel</title>
+      <link>bhrigu123.github.io/post/track-your-time-effectively-and-easily-using-google-sheets-or-excel/</link>
+      <pubDate>Sun, 24 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>bhrigu123.github.io/post/track-your-time-effectively-and-easily-using-google-sheets-or-excel/</guid>
+      <description>&lt;p&gt;The first step in &lt;strong&gt;time management&lt;/strong&gt; is to assess yourself. Meaning, track how and where you spend your time. I was reading one of Harvard Business Review&amp;rsquo;s publication called &lt;strong&gt;Managing Time&lt;/strong&gt;, which walks us through the tips for good time management.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mac Os X Command Line Tools to Edit Media</title>
+      <link>bhrigu123.github.io/post/mac-os-x-command-line-tools-to-edit-media/</link>
+      <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>bhrigu123.github.io/post/mac-os-x-command-line-tools-to-edit-media/</guid>
+      <description>&lt;p&gt;Sometimes it is quite convenient and quick to edit media files (for eg. resize images) via command line. Below are such helpful tools for Mac OS X.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu Some Handy Tools to Edit Audio / Video</title>
+      <link>bhrigu123.github.io/post/ubuntu-some-handy-tools-to-edit-audio-slash-video/</link>
+      <pubDate>Fri, 01 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>bhrigu123.github.io/post/ubuntu-some-handy-tools-to-edit-audio-slash-video/</guid>
+      <description>&lt;p&gt;There are several tools &amp;amp; libraries to edit audio/video files in Linux, such as change dimensions, video converter, resize/rotate images etc.&lt;/p&gt;
+&lt;p&gt;Mainly we&amp;rsquo;ll use &lt;code&gt;avconv&lt;/code&gt;, which can be used as command line in &lt;strong&gt;Linux&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

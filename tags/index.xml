@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Bhrigu Srivastava</title>
+    <link>bhrigu123.github.io/tags/</link>
+    <description>Recent content in Tags on Bhrigu Srivastava</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2016–2020, Bhrigu Srivastava; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 08 Dec 2020 23:22:22 +0530</lastBuildDate><atom:link href="bhrigu123.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Journal</title>
+      <link>bhrigu123.github.io/tags/journal/</link>
+      <pubDate>Tue, 08 Dec 2020 23:22:22 +0530</pubDate>
+      
+      <guid>bhrigu123.github.io/tags/journal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Productivity</title>
+      <link>bhrigu123.github.io/tags/productivity/</link>
+      <pubDate>Sun, 24 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>bhrigu123.github.io/tags/productivity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Life</title>
+      <link>bhrigu123.github.io/tags/life/</link>
+      <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>bhrigu123.github.io/tags/life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Music</title>
+      <link>bhrigu123.github.io/tags/music/</link>
+      <pubDate>Mon, 13 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>bhrigu123.github.io/tags/music/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>bhrigu123.github.io/tags/projects/</link>
+      <pubDate>Mon, 13 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>bhrigu123.github.io/tags/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>bhrigu123.github.io/tags/programming/</link>
+      <pubDate>Sun, 22 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>bhrigu123.github.io/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Photography</title>
+      <link>bhrigu123.github.io/tags/photography/</link>
+      <pubDate>Fri, 03 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>bhrigu123.github.io/tags/photography/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Django</title>
+      <link>bhrigu123.github.io/tags/django/</link>
+      <pubDate>Sat, 21 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>bhrigu123.github.io/tags/django/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Books</title>
+      <link>bhrigu123.github.io/tags/books/</link>
+      <pubDate>Sun, 17 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>bhrigu123.github.io/tags/books/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
