@@ -7,13 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2016–2020, Bhrigu Srivastava; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 08 Dec 2020 23:22:22 +0530</lastBuildDate><atom:link href="https://bhrigu.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 31 Dec 2020 20:21:41 +0530</lastBuildDate><atom:link href="https://bhrigu.me/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Journal</title>
       <link>https://bhrigu.me/tags/journal/</link>
-      <pubDate>Tue, 08 Dec 2020 23:22:22 +0530</pubDate>
+      <pubDate>Thu, 31 Dec 2020 20:21:41 +0530</pubDate>
       
       <guid>https://bhrigu.me/tags/journal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Life</title>
+      <link>https://bhrigu.me/tags/life/</link>
+      <pubDate>Thu, 31 Dec 2020 20:21:41 +0530</pubDate>
+      
+      <guid>https://bhrigu.me/tags/life/</guid>
       <description></description>
     </item>
     
@@ -23,15 +32,6 @@
       <pubDate>Sun, 24 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://bhrigu.me/tags/productivity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Life</title>
-      <link>https://bhrigu.me/tags/life/</link>
-      <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://bhrigu.me/tags/life/</guid>
       <description></description>
     </item>
     
