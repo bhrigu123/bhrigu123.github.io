@@ -73,6 +73,71 @@ What gives me high is the tremendous response I get on my website.</description>
     </item>
     
     <item>
+      <title>JEEQuery - Journey, Stats and Updates</title>
+      <link>https://bhrigu.me/post/jeequery-journey/</link>
+      <pubDate>Thu, 23 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhrigu.me/post/jeequery-journey/</guid>
+      <description>&lt;p&gt;It was the summer of 2015. I was down with an illness and had to stay confined in a room. Being too disinclined to prepare for interviews, I started out with a new django project, with the purpose of learning some new stuff in django.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Lru Cache C&#43;&#43; Implementation</title>
+      <link>https://bhrigu.me/post/lru-cache-c-plus-plus-implementation/</link>
+      <pubDate>Sun, 22 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhrigu.me/post/lru-cache-c-plus-plus-implementation/</guid>
+      <description>&lt;p&gt;LRU, or &lt;em&gt;Least Recetly Used&lt;/em&gt;, is one of the &lt;a href=&#34;https://en.wikipedia.org/wiki/Page_replacement_algorithm&#34;&gt;Page Replacement Algorithms&lt;/a&gt;, in which the system manages a given amount of memory - by making decisions what pages to keep in memory, and which ones to remove when the memory is full.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Huffman Coding Python Implementation</title>
+      <link>https://bhrigu.me/post/huffman-coding-python-implementation/</link>
+      <pubDate>Tue, 17 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhrigu.me/post/huffman-coding-python-implementation/</guid>
+      <description>&lt;p&gt;Huffman Coding is one of the lossless data compression techniques. It assigns variable-length codes to the input characters, based on the frequencies of their occurence. The most frequent character is given the smallest length code.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2016 My Year in Review</title>
+      <link>https://bhrigu.me/post/2016-my-year-in-review/</link>
+      <pubDate>Thu, 29 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhrigu.me/post/2016-my-year-in-review/</guid>
+      <description>&lt;p&gt;2016 is almost over and I felt like writing again (which happens quite rarely). Trying to recollect few of the highilghts of this year, which was full of surprises, excitement and challenges.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hyderabad Moments Amazon Internship</title>
+      <link>https://bhrigu.me/post/hyderabad-moments-amazon-internship/</link>
+      <pubDate>Wed, 12 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhrigu.me/post/hyderabad-moments-amazon-internship/</guid>
+      <description>&lt;p&gt;My 2 month internship at Amazon was an amazing experience and a new phase, be it living separately for the first time in a different city, or my first ever internship/job experience.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Photoshoot at Lodhi Garden</title>
+      <link>https://bhrigu.me/post/photoshoot-at-lodhi-garden/</link>
+      <pubDate>Fri, 03 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhrigu.me/post/photoshoot-at-lodhi-garden/</guid>
+      <description>&lt;p&gt;Before I leave for Hyderabad in a few days, I thought of paying another visit to Lodhi Garden, and immerse myself into its serene environment one last time (before I return).&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Django How to Add Foreignkey to Multiple Models</title>
+      <link>https://bhrigu.me/post/django-how-to-add-foreignkey-to-multiple-models/</link>
+      <pubDate>Sat, 21 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhrigu.me/post/django-how-to-add-foreignkey-to-multiple-models/</guid>
+      <description>&lt;p&gt;Test string1&lt;/p&gt;
+&lt;p&gt;Basically, how to make relation to more than one type of model, using one ForeignKey. (using &lt;em&gt;contenttypes&lt;/em&gt; app and &lt;em&gt;Generic Relations&lt;/em&gt;)&lt;/p&gt;
+&lt;p&gt;Suppose you have two models: &lt;code&gt;Article&lt;/code&gt; and &lt;code&gt;Post&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>A Song of Ice and Fire Analysis</title>
       <link>https://bhrigu.me/post/a-song-of-ice-and-fire-analysis/</link>
       <pubDate>Sun, 17 Apr 2016 00:00:00 +0000</pubDate>
