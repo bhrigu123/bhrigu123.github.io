@@ -1,0 +1,24 @@
+{
+  "main": {
+    "css": "main.min.css",
+    "js": "main.js"
+  },
+  "bootstrap": {
+    "js": "bootstrap.js"
+  },
+  "app": {
+    "js": "app.js"
+  },
+  "lazyload": {
+    "js": "lazyload.js"
+  },
+  "ekkoLightbox": {
+    "js": "ekkoLightbox.js"
+  },
+  "": {
+    "js": [
+      "vendors-node_modules_fortawesome_fontawesome-svg-core_index_es_js-node_modules_fortawesome_fr-02de40.js",
+      "vendors-node_modules_jquery_dist_jquery_js.js"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{{ $src := .Get "src" }}
+{{ $caption := .Get "caption" }}
+{{ $height := .Get "height" }}
+
+<br>
+<center>
+	<a href="{{ $src }}" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+	<img
+	 src="{{ $src }}"
+	 height="{{ $height }}"
+	/>
+	</a>
+</center><br>
+<figcaption class="figure-caption text-center">{{ $caption }}</figcaption>
+<br>

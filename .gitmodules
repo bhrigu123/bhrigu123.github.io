@@ -1,3 +1,12 @@
-[submodule ".themes/casper"]
-	path = .themes/casper
-	url = https://github.com/jkrmr/casper.git
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/budparr/gohugo-theme-ananke.git
+[submodule "themes/anatole"]
+	path = themes/anatole
+	url = https://github.com/lxndrblz/anatole.git
+[submodule "themes/chunky-poster"]
+	path = themes/chunky-poster
+	url = https://github.com/puresyntax71/hugo-theme-chunky-poster.git
+[submodule "themes/hugo-theme-chunky-poster-fork"]
+	path = themes/hugo-theme-chunky-poster-fork
+	url = https://github.com/bhrigu123/hugo-theme-chunky-poster.git
