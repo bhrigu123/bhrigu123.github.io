@@ -8,6 +8,8 @@ tags = ["Journal", "Life"]
 +++
 
 Looking back at 2020, it was a confusing ride. The pandemic / lockdown had nothing to with that, for me at least. For me it was....really...confusing, at a personal level. Not sure what other word to use to describe it.
+<!--more-->
+
 
 It had started off well, in January. But Feb / March onwards was when it started to get...confusing.
 
@@ -24,6 +26,8 @@ Going forward, I hope I continue to actively:
 * Learn
 * Explore and Take risks
 * Exercise and play sports
+
+oh and most importantly, I ought to live more in the present than in the past.
 
 That's all for that. Happy New Year :)
 
