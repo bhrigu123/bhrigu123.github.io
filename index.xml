@@ -23,8 +23,7 @@
       <pubDate>Tue, 08 Dec 2020 23:22:22 +0530</pubDate>
       
       <guid>https://bhrigu.me/post/migrating-to-hugo/</guid>
-      <description>Back in 2015 I kicked off blogging when I discovered Octpress. It has been a great journey in my writing experience. I had started it to mostly comprise of technical articles. But over the time it evolved to be a collection of articles around productivity, projects and my life&amp;rsquo;s events as well (a journal of sorts), besides just the tech articles that I write.
-What gives me high is the tremendous response I get on my website.</description>
+      <description>&lt;p&gt;Back in 2015 I kicked off blogging when I discovered &lt;em&gt;Octpress&lt;/em&gt;. It has been a great journey in my writing experience. I had started it to mostly comprise of technical articles.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -33,7 +32,7 @@ What gives me high is the tremendous response I get on my website.</description>
       <pubDate>Sun, 24 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://bhrigu.me/post/track-your-time-effectively-and-easily-using-google-sheets-or-excel/</guid>
-      <description>&lt;p&gt;The first step in &lt;strong&gt;time management&lt;/strong&gt; is to assess yourself. Meaning, track how and where you spend your time. I was reading one of Harvard Business Review&amp;rsquo;s publication called &lt;strong&gt;Managing Time&lt;/strong&gt;, which walks us through the tips for good time management.&lt;/p&gt;</description>
+      <description>&lt;p&gt;The first step in &lt;strong&gt;time management&lt;/strong&gt; is to assess yourself. Meaning, track how and where you spend your time. I was reading one of Harvard Business Review&amp;rsquo;s publication&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -51,7 +50,7 @@ What gives me high is the tremendous response I get on my website.</description>
       <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://bhrigu.me/post/2019-year-in-review/</guid>
-      <description>&lt;p&gt;It&amp;rsquo;s the March of 2020 now. I am super late this time to write about my last year in review blog post. The thing is, 2020 has been a super confusing ride from the beginning. And it&amp;rsquo;s just March. Anyways, more about 2020 next year. I&amp;rsquo;ll just take out some time now to write about 2019 while I am in Delhi for the Holi holidays.&lt;/p&gt;</description>
+      <description>&lt;p&gt;It&amp;rsquo;s the March of 2020 now. I am super late this time to write about my last year in review blog post. The thing is, 2020 has been a super confusing ride from the beginning. And it&amp;rsquo;s just March.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -250,6 +249,19 @@ I have a constant hunger for learning new things, be it in anything - software d
       
       <guid>https://bhrigu.me/post/the-game-is-on/</guid>
       <description>&lt;p&gt;So after setting up octopress and learning how to use it and deploy using Github, I have finally set out to blogging, which I wanted to start for a long time but was everytime too lazy to set up my computer.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Music</title>
+      <link>https://bhrigu.me/music/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhrigu.me/music/</guid>
+      <description>I am a huge music fanatic. I love listening to it and playing it.
+My favourite genres range from Classic rock to Hindi classicals to movie soundtracks (huge Hans Zimmer fan). I enjoy good music and meaninful lyrics.
+Being a music lover, I got myself into playing Guitar and Drums also.
+I have:
+ Yamaha F310 acoustic guitar Fender Squier electric Alesis Nitro mesh electronic drum kit  I upload cover songs mostly on my YouTube Channel and some others on Facebook/Instagram.</description>
     </item>
     
   </channel>
