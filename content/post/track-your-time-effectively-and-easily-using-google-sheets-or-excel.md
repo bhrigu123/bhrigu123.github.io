@@ -7,7 +7,7 @@ authors = ["Bhrigu",]
 description = "Use Google Sheets (or Excel) to track and manage your time easily and effectively"
 +++
 
-The first step in **time management** is to assess yourself. Meaning, track how and where you spend your time. I was reading one of Harvard Business Review's publication called **Managing Time**, which walks us through the tips for good time management. <!--more--> It talks about how being self-aware of our habits and where we spend our time will help us achieve better management and utilisation of time. This article shows how you can very easily use a spreasheet (like Google Sheets or MS Excel) to track your time however you want (instead of relying on an app which might not provide what you really want to achieve). 
+The first step in **time management** is to assess yourself. Meaning, track how and where you spend your time. I was reading one of Harvard Business Review's publication <!--more-->called **Managing Time**, which walks us through the tips for good time management. It talks about how being self-aware of our habits and where we spend our time will help us achieve better management and utilisation of time. This article shows how you can very easily use a spreasheet (like Google Sheets or MS Excel) to track your time however you want (instead of relying on an app which might not provide what you really want to achieve). 
 
 
 ### 1. Divide your responsibilities into categories  

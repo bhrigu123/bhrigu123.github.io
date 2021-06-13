@@ -7,8 +7,8 @@ images = ["/images/year2019/china.jpeg"]
 tags = ["Journal", "Life"]
 +++
 
-It's the March of 2020 now. I am super late this time to write about my last year in review blog post. The thing is, 2020 has been a super confusing ride from the beginning. And it's just March. Anyways, more about 2020 next year. I'll just take out some time now to write about 2019 while I am in Delhi for the Holi holidays.
-<!--more-->
+It's the March of 2020 now. I am super late this time to write about my last year in review blog post. The thing is, 2020 has been a super confusing ride from the beginning. And it's just March. <!--more--> Anyways, more about 2020 next year. I'll just take out some time now to write about 2019 while I am in Delhi for the Holi holidays.
+
 
 2019 was great. A lot went down in the last year. I will actually have to trim down on the details to keep this brief.
 <hr>

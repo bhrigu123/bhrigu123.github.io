@@ -6,7 +6,7 @@ tags: ["Journal"]
 authors: ["Bhrigu"]
 ---
 
-Back in 2015 I kicked off blogging when I discovered *Octpress*. It has been a great journey in my writing experience. I had started it to mostly comprise of technical articles. But over the time it evolved to be a collection of articles around productivity, projects and my life's events as well (a journal of sorts), besides just the tech articles that I write. 
+Back in 2015 I kicked off blogging when I discovered *Octpress*. It has been a great journey in my writing experience. I had started it to mostly comprise of technical articles. <!--more--> But over the time it evolved to be a collection of articles around productivity, projects and my life's events as well (a journal of sorts), besides just the tech articles that I write. 
 
 What gives me high is the tremendous response I get on my website. Glad to know that I'm able to contribute with my content.
 
