@@ -52,8 +52,7 @@ Also, I got a weird haircut from China in the end.
 
 ### Aug
 Made a brief visit to Mumbai in August from office. Though it was just for 3 days, had a relaxing time.  
-Also to mention, I had thought of taking more initiatives and have more social life outside of work. I met and talked with some new people and developed new friendships. I'm also glad I had one such moment in Aug which developed a closer friendship and relationship with someone really close.
-
+Also to mention, I had thought of taking more initiatives and have more social life outside of work. I met and talked with some new people and developed new friendships and relationships.
 
 
 ### Sep - U.S. visit

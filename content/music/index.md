@@ -7,7 +7,7 @@ description = "About Bhrigu Srivastava's music"
 
 I am a huge music fanatic. I love listening to it and playing it.
 
-My favourite genres range from Classic rock to Hindi classicals to movie soundtracks (huge Hans Zimmer fan). I enjoy good music and meaninful lyrics.
+My favourite genres range from Classic rock to Hindi classicals to movie soundtracks (huge Hans Zimmer fan). I enjoy good music and meaningful lyrics.
 
 Being a music lover, I got myself into playing Guitar and Drums also. 
 
